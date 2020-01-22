@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['fifth_5fcolumn',['FIFTH_COLUMN',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a66842e7b52c94d0639f3620fb85675b1',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['fifth_5frow',['FIFTH_ROW',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a5086d6af079dba75527facf55b4f48c2',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['file_5fa',['FILE_A',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a19eb4a2256e960871b2d638d51d3cccd',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fb',['FILE_B',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a5a96272f99c46f5eb820cba07a7638dc',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fc',['FILE_C',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a4014f5b7e28561f1a97448149bd50632',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fd',['FILE_D',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#acaaf89972ce0bbf92a7cf7dbf280ed4f',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fe',['FILE_E',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a126875f362198ebcccb1794dda45c597',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5ff',['FILE_F',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#ac1289af8038d4cbc19a4f4b2af8d51be',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fg',['FILE_G',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a390d7db81c0bd453b95ccd7cc06d373c',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['file_5fh',['FILE_H',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#a001430ba2429224afb9d4ef5df91d849',1,'com::chess::engine::bitboards::BitBoard']]],
+  ['first_5fcolumn',['FIRST_COLUMN',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a8d6543714fe537d1a8feae414fcbd292',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['first_5frow',['FIRST_ROW',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a236586cb1e8b70ada3bb2dfad8b9c1e4',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['fourth_5fcolumn',['FOURTH_COLUMN',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a0ad97ad2ee0708d15555e43e0576bece',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['fourth_5frow',['FOURTH_ROW',['../enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils.html#a4388b92dd875dd81cb5cbe225137c862',1,'com::chess::engine::classic::board::BoardUtils']]],
+  ['fromboard',['fromBoard',['../classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_move_transition.html#a99ec04df17243401f6e3a67b0e90c1f6',1,'com::chess::engine::classic::board::MoveTransition']]],
+  ['full_5fset',['FULL_SET',['../classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board.html#ae91d0a05b44cc7159022db2510a0e37a',1,'com::chess::engine::bitboards::BitBoard']]]
+];

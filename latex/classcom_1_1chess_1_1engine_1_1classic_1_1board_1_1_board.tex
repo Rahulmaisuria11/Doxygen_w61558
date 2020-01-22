@@ -1,0 +1,247 @@
+\hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{}\section{com.\+chess.\+engine.\+classic.\+board.\+Board Class Reference}
+\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_1_1_builder}{Builder}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2e2bef66bba93c69586e9a7f19e175b9}{to\+String}} ()
+\item 
+Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a95b66fc2591444c0ca179ad5dc1666a0}{get\+Black\+Pieces}} ()
+\item 
+Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2c52aeb881e4899c5608d1007ab28a0f}{get\+White\+Pieces}} ()
+\item 
+Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_abef72e6eb498558b6b66f8754cda4541}{get\+All\+Pieces}} ()
+\item 
+Collection$<$ Move $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0f515dfcea2c3535d28a285470ee7145}{get\+All\+Legal\+Moves}} ()
+\item 
+White\+Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a8d9636240bd6fb8fbca82e4d823fdedd}{white\+Player}} ()
+\item 
+Black\+Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7efcf4a55338975e89dc14be3dc5c0f9}{black\+Player}} ()
+\item 
+Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a67d1dc377ce8d803de3681cdb5609e44}{current\+Player}} ()
+\item 
+Piece \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5f774937f4612af06d221f499a93d0a7}{get\+Piece}} (final int coordinate)
+\item 
+Pawn \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6df13461883643733498590b47c8ba0b}{get\+En\+Passant\+Pawn}} ()
+\item 
+Move \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6a5d7c041828d10e8a64bf99915d7675}{get\+Transition\+Move}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5c85105e2c754cab7e37adaeb4243f1b}{create\+Standard\+Board}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a948fa5cb674ef814d68c4e5e195e37a6}{Board}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_1_1_builder}{Builder}} builder)
+\item 
+Collection$<$ Move $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a4518ab116ca4d51efe4318f8f122c7e1}{calculate\+Legal\+Moves}} (final Collection$<$ Piece $>$ pieces)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a64d5419367f3fdcb642cbd5d71c140ca}{pretty\+Print}} (final Piece piece)
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a973e9a75cc7371052c75f01a025b2020}{create\+Standard\+Board\+Impl}} ()
+\item 
+static Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_adcc3302ae38841376f7578dbcae24043}{calculate\+Active\+Pieces}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_1_1_builder}{Builder}} builder, final Alliance alliance)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Int2\+Object\+Map$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7764cf32d033006d2e090cdcd4229f7a}{board\+Config}}
+\item 
+final Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a9e471b0856337f9cf136e2e4502002e9}{white\+Pieces}}
+\item 
+final Collection$<$ Piece $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0dbdad611d26703a6f8ca4103354e6c7}{black\+Pieces}}
+\item 
+final White\+Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a090a5692a0d5454e69d2f3af5da5bbb1}{white\+Player}}
+\item 
+final Black\+Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7ee83bef4e70524b7d28214ee87d0acd}{black\+Player}}
+\item 
+final Player \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a3a88b9c4c8f0e2d1d53e9a4a4cf7835e}{current\+Player}}
+\item 
+final Pawn \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_ac342c5db1ace79186d479aa996b4d994}{en\+Passant\+Pawn}}
+\item 
+final Move \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_aa795afed482f6af0c9a9e104649e0c80}{transition\+Move}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a93bec1e14cdc0c5b152e54252e158019}{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+B\+O\+A\+RD}} = \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a973e9a75cc7371052c75f01a025b2020}{create\+Standard\+Board\+Impl}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a948fa5cb674ef814d68c4e5e195e37a6}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a948fa5cb674ef814d68c4e5e195e37a6}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!Board@{Board}}
+\index{Board@{Board}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+classic.\+board.\+Board.\+Board (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_1_1_builder}{Builder}}}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7efcf4a55338975e89dc14be3dc5c0f9}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7efcf4a55338975e89dc14be3dc5c0f9}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!blackPlayer@{blackPlayer}}
+\index{blackPlayer@{blackPlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{blackPlayer()}{blackPlayer()}}
+{\footnotesize\ttfamily Black\+Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+black\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_adcc3302ae38841376f7578dbcae24043}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_adcc3302ae38841376f7578dbcae24043}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!calculateActivePieces@{calculateActivePieces}}
+\index{calculateActivePieces@{calculateActivePieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{calculateActivePieces()}{calculateActivePieces()}}
+{\footnotesize\ttfamily static Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+calculate\+Active\+Pieces (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_1_1_builder}{Builder}}}]{builder,  }\item[{final Alliance}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a4518ab116ca4d51efe4318f8f122c7e1}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a4518ab116ca4d51efe4318f8f122c7e1}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!calculateLegalMoves@{calculateLegalMoves}}
+\index{calculateLegalMoves@{calculateLegalMoves}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{calculateLegalMoves()}{calculateLegalMoves()}}
+{\footnotesize\ttfamily Collection$<$Move$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+calculate\+Legal\+Moves (\begin{DoxyParamCaption}\item[{final Collection$<$ Piece $>$}]{pieces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5c85105e2c754cab7e37adaeb4243f1b}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5c85105e2c754cab7e37adaeb4243f1b}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!createStandardBoard@{createStandardBoard}}
+\index{createStandardBoard@{createStandardBoard}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{createStandardBoard()}{createStandardBoard()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} com.\+chess.\+engine.\+classic.\+board.\+Board.\+create\+Standard\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a973e9a75cc7371052c75f01a025b2020}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a973e9a75cc7371052c75f01a025b2020}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!createStandardBoardImpl@{createStandardBoardImpl}}
+\index{createStandardBoardImpl@{createStandardBoardImpl}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{createStandardBoardImpl()}{createStandardBoardImpl()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} com.\+chess.\+engine.\+classic.\+board.\+Board.\+create\+Standard\+Board\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a67d1dc377ce8d803de3681cdb5609e44}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a67d1dc377ce8d803de3681cdb5609e44}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!currentPlayer@{currentPlayer}}
+\index{currentPlayer@{currentPlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{currentPlayer()}{currentPlayer()}}
+{\footnotesize\ttfamily Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0f515dfcea2c3535d28a285470ee7145}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0f515dfcea2c3535d28a285470ee7145}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getAllLegalMoves@{getAllLegalMoves}}
+\index{getAllLegalMoves@{getAllLegalMoves}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getAllLegalMoves()}{getAllLegalMoves()}}
+{\footnotesize\ttfamily Collection$<$Move$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+All\+Legal\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_abef72e6eb498558b6b66f8754cda4541}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_abef72e6eb498558b6b66f8754cda4541}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getAllPieces@{getAllPieces}}
+\index{getAllPieces@{getAllPieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getAllPieces()}{getAllPieces()}}
+{\footnotesize\ttfamily Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+All\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a95b66fc2591444c0ca179ad5dc1666a0}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a95b66fc2591444c0ca179ad5dc1666a0}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getBlackPieces@{getBlackPieces}}
+\index{getBlackPieces@{getBlackPieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getBlackPieces()}{getBlackPieces()}}
+{\footnotesize\ttfamily Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+Black\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6df13461883643733498590b47c8ba0b}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6df13461883643733498590b47c8ba0b}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getEnPassantPawn@{getEnPassantPawn}}
+\index{getEnPassantPawn@{getEnPassantPawn}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getEnPassantPawn()}{getEnPassantPawn()}}
+{\footnotesize\ttfamily Pawn com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+En\+Passant\+Pawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5f774937f4612af06d221f499a93d0a7}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a5f774937f4612af06d221f499a93d0a7}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getPiece()}{getPiece()}}
+{\footnotesize\ttfamily Piece com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{final int}]{coordinate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6a5d7c041828d10e8a64bf99915d7675}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a6a5d7c041828d10e8a64bf99915d7675}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getTransitionMove@{getTransitionMove}}
+\index{getTransitionMove@{getTransitionMove}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getTransitionMove()}{getTransitionMove()}}
+{\footnotesize\ttfamily Move com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+Transition\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2c52aeb881e4899c5608d1007ab28a0f}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2c52aeb881e4899c5608d1007ab28a0f}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!getWhitePieces@{getWhitePieces}}
+\index{getWhitePieces@{getWhitePieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{getWhitePieces()}{getWhitePieces()}}
+{\footnotesize\ttfamily Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+get\+White\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a64d5419367f3fdcb642cbd5d71c140ca}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a64d5419367f3fdcb642cbd5d71c140ca}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily static String com.\+chess.\+engine.\+classic.\+board.\+Board.\+pretty\+Print (\begin{DoxyParamCaption}\item[{final Piece}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2e2bef66bba93c69586e9a7f19e175b9}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a2e2bef66bba93c69586e9a7f19e175b9}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!toString@{toString}}
+\index{toString@{toString}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String com.\+chess.\+engine.\+classic.\+board.\+Board.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a8d9636240bd6fb8fbca82e4d823fdedd}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a8d9636240bd6fb8fbca82e4d823fdedd}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!whitePlayer@{whitePlayer}}
+\index{whitePlayer@{whitePlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{whitePlayer()}{whitePlayer()}}
+{\footnotesize\ttfamily White\+Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+white\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0dbdad611d26703a6f8ca4103354e6c7}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a0dbdad611d26703a6f8ca4103354e6c7}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!blackPieces@{blackPieces}}
+\index{blackPieces@{blackPieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{blackPieces}{blackPieces}}
+{\footnotesize\ttfamily final Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+black\+Pieces\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7ee83bef4e70524b7d28214ee87d0acd}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7ee83bef4e70524b7d28214ee87d0acd}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!blackPlayer@{blackPlayer}}
+\index{blackPlayer@{blackPlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{blackPlayer}{blackPlayer}}
+{\footnotesize\ttfamily final Black\+Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+black\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7764cf32d033006d2e090cdcd4229f7a}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a7764cf32d033006d2e090cdcd4229f7a}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!boardConfig@{boardConfig}}
+\index{boardConfig@{boardConfig}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{boardConfig}{boardConfig}}
+{\footnotesize\ttfamily final Int2\+Object\+Map$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+board\+Config\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a3a88b9c4c8f0e2d1d53e9a4a4cf7835e}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a3a88b9c4c8f0e2d1d53e9a4a4cf7835e}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!currentPlayer@{currentPlayer}}
+\index{currentPlayer@{currentPlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{currentPlayer}{currentPlayer}}
+{\footnotesize\ttfamily final Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+current\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_ac342c5db1ace79186d479aa996b4d994}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_ac342c5db1ace79186d479aa996b4d994}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!enPassantPawn@{enPassantPawn}}
+\index{enPassantPawn@{enPassantPawn}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{enPassantPawn}{enPassantPawn}}
+{\footnotesize\ttfamily final Pawn com.\+chess.\+engine.\+classic.\+board.\+Board.\+en\+Passant\+Pawn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a93bec1e14cdc0c5b152e54252e158019}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a93bec1e14cdc0c5b152e54252e158019}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!STANDARD\_BOARD@{STANDARD\_BOARD}}
+\index{STANDARD\_BOARD@{STANDARD\_BOARD}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{STANDARD\_BOARD}{STANDARD\_BOARD}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} com.\+chess.\+engine.\+classic.\+board.\+Board.\+S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+B\+O\+A\+RD = \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a973e9a75cc7371052c75f01a025b2020}{create\+Standard\+Board\+Impl}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_aa795afed482f6af0c9a9e104649e0c80}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_aa795afed482f6af0c9a9e104649e0c80}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!transitionMove@{transitionMove}}
+\index{transitionMove@{transitionMove}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{transitionMove}{transitionMove}}
+{\footnotesize\ttfamily final Move com.\+chess.\+engine.\+classic.\+board.\+Board.\+transition\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a9e471b0856337f9cf136e2e4502002e9}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a9e471b0856337f9cf136e2e4502002e9}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!whitePieces@{whitePieces}}
+\index{whitePieces@{whitePieces}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{whitePieces}{whitePieces}}
+{\footnotesize\ttfamily final Collection$<$Piece$>$ com.\+chess.\+engine.\+classic.\+board.\+Board.\+white\+Pieces\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a090a5692a0d5454e69d2f3af5da5bbb1}\label{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_a090a5692a0d5454e69d2f3af5da5bbb1}} 
+\index{com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}!whitePlayer@{whitePlayer}}
+\index{whitePlayer@{whitePlayer}!com.chess.engine.classic.board.Board@{com.chess.engine.classic.board.Board}}
+\subsubsection{\texorpdfstring{whitePlayer}{whitePlayer}}
+{\footnotesize\ttfamily final White\+Player com.\+chess.\+engine.\+classic.\+board.\+Board.\+white\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_board_8java}{Board.\+java}}\end{DoxyCompactItemize}

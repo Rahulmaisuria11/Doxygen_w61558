@@ -1,0 +1,669 @@
+\hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board}{}\section{com.\+chess.\+engine.\+bitboards.\+Bit\+Board Class Reference}
+\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board}\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece}{Piece}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_afb76f345ee988535cb0b891fa90df3c0}{Bit\+Board}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2d779cb6eee4e38260a001253f06793d}{generate\+Standard\+Legal\+Moves}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae0882836b530b664fa2dcc05e1ce3c5c}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9592ff2398f3d7c41ea8d9cd77a8df1a}{get\+Position\+At\+Coordinate}} (final int c)
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a952cb4f4649710e3bb3d452ea134daf6}{\mbox{[}static initializer\mbox{]}}}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Map$<$ Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0f6716984bf7cb50cc008d6e517eaeb7}{A\+L\+L\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+LS}} = new Hash\+Map$<$$>$()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95546639f4b3b9086e62bbd13433f3b7}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+1}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad7a2bd4c87af28df3e51158b32bd8636}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+2}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5bfc2adb2f82f22b0c41603e04e38941}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+3}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aacdb9366c6820d32743fbd4049dc2162}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+4}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95813d02585c8a6b4c70223bd0598788}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+5}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa714f18495204887126d270af48c0b51}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+6}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aaf2f2560b103c6e9e4800a36921597}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+7}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2e7180090f80f4bf33eef9dfe2e5368e}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+8}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9f3949eb68809de0fc4985535ad49f70}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+9}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aac7d236c1d41059e0ab236599d3e21}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+10}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a857b5864f7e9df04b82ef3f5bbc4a3e8}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+11}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab30f141ba1a206889f14988652985828}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+12}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acf583a9224ff9b14fe55a08faa947225}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+13}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aaf0387d21f79b4e00eed0a172a84978e}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+14}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a26a6515625b2ccdb4cc6bc6b15edaf73}{L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+15}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a61644d5483d8294a2ee036b9379ccf04}{initialize\+Rows}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6bd0b4bf00b7a56478d5881646ef9931}{initialize\+Left\+Diagonals}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0eb8393869125d78eceda9f0d24c3851}{initialize\+Right\+Diagonals}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a713e9babb2550e9447105a7b75ce6018}{initialize\+Columns}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa202f4295954b6045f2103e91054d396}{board\+Legal\+Moves}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae6f5958b9c8907ddfc8310bcca87cfc6}{white\+Knights}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a10d667e419ef546ff5fbab132580ad9e}{white\+Bishops}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a296b28529366f3f5db38f17b5a892986}{white\+Rooks}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9afc0921605a472a4143f7898c3d6e0c}{white\+Queens}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1f810fcdcaad115b8da54adfffc2863a}{white\+King}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a57763cf0934100e24b79394bd06bd96c}{white\+Pawns}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae2fffa79336cf907e600cafbc7445f52}{black\+Knights}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7e13c435631e2103ca928bf4fadf82ed}{black\+Bishops}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_adcba2daabc248fe030e2b815e6252da8}{black\+Rooks}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_abd561a74647c18f2e15c8924cabc692e}{black\+Queens}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a40e3d664ebbd79a42bbc07d772b902f7}{black\+King}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a907bb623a3fb398d7ee9fc94107bace8}{black\+Pawns}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acb30850f7d529c2d709e8dd82c9199c6}{white\+Legal\+Locations}}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a8865f9dda39ec90b651b503ff10202e6}{black\+Legal\+Locations}}
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a19eb4a2256e960871b2d638d51d3cccd}{F\+I\+L\+E\+\_\+A}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5a96272f99c46f5eb820cba07a7638dc}{F\+I\+L\+E\+\_\+B}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a4014f5b7e28561f1a97448149bd50632}{F\+I\+L\+E\+\_\+C}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acaaf89972ce0bbf92a7cf7dbf280ed4f}{F\+I\+L\+E\+\_\+D}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a126875f362198ebcccb1794dda45c597}{F\+I\+L\+E\+\_\+E}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ac1289af8038d4cbc19a4f4b2af8d51be}{F\+I\+L\+E\+\_\+F}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a390d7db81c0bd453b95ccd7cc06d373c}{F\+I\+L\+E\+\_\+G}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a001430ba2429224afb9d4ef5df91d849}{F\+I\+L\+E\+\_\+H}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static Map$<$ Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a15c38265aa865860fa7a91fbfb48ec8e}{A\+L\+L\+\_\+\+F\+I\+L\+ES}} = new Hash\+Map$<$$>$()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a87f2b1cc5fb80a0292612747f8689599}{R\+A\+N\+K\+\_\+1}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a005b14157148e3131ddf3f62de20c973}{R\+A\+N\+K\+\_\+2}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acea287f41ba6c0db58b0ded665c52735}{R\+A\+N\+K\+\_\+3}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab2c39b5fb7a81a4c990dee80ab6aebe8}{R\+A\+N\+K\+\_\+4}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7f632bbac58213a759c63fcf8f92eb43}{R\+A\+N\+K\+\_\+5}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a09122a73125ca1bb464818aec39844bc}{R\+A\+N\+K\+\_\+6}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6f1bb32fff90a1b7010b81b80fee6cba}{R\+A\+N\+K\+\_\+7}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9c9fd7fe30bee6ebf6aaf3c293ff1953}{R\+A\+N\+K\+\_\+8}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static Map$<$ Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3b9ee892d270c5abfc76f8d4bb7b69c7}{A\+L\+L\+\_\+\+R\+A\+N\+KS}} = new Hash\+Map$<$$>$()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3dcde2d96c9a907d05c4d3b53b26cef7}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+1}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aedb7e661b836d0b44c0069e3a365fa5d}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+2}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a05fbfeb73ed231f2aa5b6137f059a816}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+3}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1dcc27abde3d74c347c5670aab68ca99}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+4}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a96efd74a7979ce53b0186f214341c164}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+5}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a44b83493608022faf170ad241e34bce8}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+6}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a386aa21cc88e3e552a5faebe2b4cb4ee}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+7}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab5154add7b7a0c32b319e44136c5beef}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+8}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae4884846ea992f2c2ad036d49d6be6e8}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+9}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7cfb5450696aeb28bddd49085947f8fa}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+10}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad5047fc0dbfb23ac04844d45d83a41e3}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+11}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa1d75d641bd102dd7d27c3b0fa5add6c}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+12}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_af70e1d730430b970758ac86adc719a36}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+13}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a55295419d848dfadcf50f550c22fe5b0}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+14}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa52061b74a98e0b34fb8fdfc399ac10a}{R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+15}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static Map$<$ Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} $>$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a38ff11d8fc85429173b97f2b79491713}{A\+L\+L\+\_\+\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+LS}} = new Hash\+Map$<$$>$()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a926322af54a20b9fd2bcdaf5b179222e}{E\+M\+P\+T\+Y\+\_\+\+S\+ET}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae91d0a05b44cc7159022db2510a0e37a}{F\+U\+L\+L\+\_\+\+S\+ET}} = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()
+\item 
+static final String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a298f0130c0d20dd5f59ec6543bf29f28}{algebreic\+Notation}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_afb76f345ee988535cb0b891fa90df3c0}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_afb76f345ee988535cb0b891fa90df3c0}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!BitBoard@{BitBoard}}
+\index{BitBoard@{BitBoard}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{BitBoard()}{BitBoard()}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Bit\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a952cb4f4649710e3bb3d452ea134daf6}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a952cb4f4649710e3bb3d452ea134daf6}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!\mbox{[}static initializer\mbox{]}@{[static initializer]}}
+\index{\mbox{[}static initializer\mbox{]}@{[static initializer]}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{[static initializer]()}{[static initializer]()}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\mbox{[}static initializer\mbox{]} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2d779cb6eee4e38260a001253f06793d}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2d779cb6eee4e38260a001253f06793d}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!generateStandardLegalMoves@{generateStandardLegalMoves}}
+\index{generateStandardLegalMoves@{generateStandardLegalMoves}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{generateStandardLegalMoves()}{generateStandardLegalMoves()}}
+{\footnotesize\ttfamily void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+generate\+Standard\+Legal\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9592ff2398f3d7c41ea8d9cd77a8df1a}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9592ff2398f3d7c41ea8d9cd77a8df1a}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!getPositionAtCoordinate@{getPositionAtCoordinate}}
+\index{getPositionAtCoordinate@{getPositionAtCoordinate}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{getPositionAtCoordinate()}{getPositionAtCoordinate()}}
+{\footnotesize\ttfamily static String com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+get\+Position\+At\+Coordinate (\begin{DoxyParamCaption}\item[{final int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a713e9babb2550e9447105a7b75ce6018}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a713e9babb2550e9447105a7b75ce6018}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!initializeColumns@{initializeColumns}}
+\index{initializeColumns@{initializeColumns}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{initializeColumns()}{initializeColumns()}}
+{\footnotesize\ttfamily static void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+initialize\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6bd0b4bf00b7a56478d5881646ef9931}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6bd0b4bf00b7a56478d5881646ef9931}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!initializeLeftDiagonals@{initializeLeftDiagonals}}
+\index{initializeLeftDiagonals@{initializeLeftDiagonals}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{initializeLeftDiagonals()}{initializeLeftDiagonals()}}
+{\footnotesize\ttfamily static void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+initialize\+Left\+Diagonals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0eb8393869125d78eceda9f0d24c3851}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0eb8393869125d78eceda9f0d24c3851}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!initializeRightDiagonals@{initializeRightDiagonals}}
+\index{initializeRightDiagonals@{initializeRightDiagonals}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{initializeRightDiagonals()}{initializeRightDiagonals()}}
+{\footnotesize\ttfamily static void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+initialize\+Right\+Diagonals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a61644d5483d8294a2ee036b9379ccf04}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a61644d5483d8294a2ee036b9379ccf04}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!initializeRows@{initializeRows}}
+\index{initializeRows@{initializeRows}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{initializeRows()}{initializeRows()}}
+{\footnotesize\ttfamily static void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+initialize\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae0882836b530b664fa2dcc05e1ce3c5c}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae0882836b530b664fa2dcc05e1ce3c5c}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!toString@{toString}}
+\index{toString@{toString}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a298f0130c0d20dd5f59ec6543bf29f28}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a298f0130c0d20dd5f59ec6543bf29f28}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!algebreicNotation@{algebreicNotation}}
+\index{algebreicNotation@{algebreicNotation}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{algebreicNotation}{algebreicNotation}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+algebreic\+Notation\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ \textcolor{stringliteral}{"a8"}, \textcolor{stringliteral}{"b8"}, \textcolor{stringliteral}{"c8"}, \textcolor{stringliteral}{"d8"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"e8"}, \textcolor{stringliteral}{"f8"}, \textcolor{stringliteral}{"g8"}, \textcolor{stringliteral}{"h8"}, \textcolor{stringliteral}{"a7"}, \textcolor{stringliteral}{"b7"}, \textcolor{stringliteral}{"c7"}, \textcolor{stringliteral}{"d7"}, \textcolor{stringliteral}{"e7"}, \textcolor{stringliteral}{"f7"}, \textcolor{stringliteral}{"g7"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"h7"}, \textcolor{stringliteral}{"a6"}, \textcolor{stringliteral}{"b6"}, \textcolor{stringliteral}{"c6"}, \textcolor{stringliteral}{"d6"}, \textcolor{stringliteral}{"e6"}, \textcolor{stringliteral}{"f6"}, \textcolor{stringliteral}{"g6"}, \textcolor{stringliteral}{"h6"}, \textcolor{stringliteral}{"a5"}, \textcolor{stringliteral}{"b5"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"c5"}, \textcolor{stringliteral}{"d5"}, \textcolor{stringliteral}{"e5"}, \textcolor{stringliteral}{"f5"}, \textcolor{stringliteral}{"g5"}, \textcolor{stringliteral}{"h5"}, \textcolor{stringliteral}{"a4"}, \textcolor{stringliteral}{"b4"}, \textcolor{stringliteral}{"c4"}, \textcolor{stringliteral}{"d4"}, \textcolor{stringliteral}{"e4"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"f4"}, \textcolor{stringliteral}{"g4"}, \textcolor{stringliteral}{"h4"}, \textcolor{stringliteral}{"a3"}, \textcolor{stringliteral}{"b3"}, \textcolor{stringliteral}{"c3"}, \textcolor{stringliteral}{"d3"}, \textcolor{stringliteral}{"e3"}, \textcolor{stringliteral}{"f3"}, \textcolor{stringliteral}{"g3"}, \textcolor{stringliteral}{"h3"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"a2"}, \textcolor{stringliteral}{"b2"}, \textcolor{stringliteral}{"c2"}, \textcolor{stringliteral}{"d2"}, \textcolor{stringliteral}{"e2"}, \textcolor{stringliteral}{"f2"}, \textcolor{stringliteral}{"g2"}, \textcolor{stringliteral}{"h2"}, \textcolor{stringliteral}{"a1"}, \textcolor{stringliteral}{"b1"}, \textcolor{stringliteral}{"c1"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"d1"}, \textcolor{stringliteral}{"e1"}, \textcolor{stringliteral}{"f1"}, \textcolor{stringliteral}{"g1"}, \textcolor{stringliteral}{"h1"} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a15c38265aa865860fa7a91fbfb48ec8e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a15c38265aa865860fa7a91fbfb48ec8e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!ALL\_FILES@{ALL\_FILES}}
+\index{ALL\_FILES@{ALL\_FILES}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{ALL\_FILES}{ALL\_FILES}}
+{\footnotesize\ttfamily Map$<$Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+A\+L\+L\+\_\+\+F\+I\+L\+ES = new Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a38ff11d8fc85429173b97f2b79491713}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a38ff11d8fc85429173b97f2b79491713}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!ALL\_LEFT\_DIAGONALS@{ALL\_LEFT\_DIAGONALS}}
+\index{ALL\_LEFT\_DIAGONALS@{ALL\_LEFT\_DIAGONALS}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{ALL\_LEFT\_DIAGONALS}{ALL\_LEFT\_DIAGONALS}}
+{\footnotesize\ttfamily Map$<$Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+A\+L\+L\+\_\+\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+LS = new Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3b9ee892d270c5abfc76f8d4bb7b69c7}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3b9ee892d270c5abfc76f8d4bb7b69c7}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!ALL\_RANKS@{ALL\_RANKS}}
+\index{ALL\_RANKS@{ALL\_RANKS}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{ALL\_RANKS}{ALL\_RANKS}}
+{\footnotesize\ttfamily Map$<$Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+A\+L\+L\+\_\+\+R\+A\+N\+KS = new Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0f6716984bf7cb50cc008d6e517eaeb7}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a0f6716984bf7cb50cc008d6e517eaeb7}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!ALL\_RIGHT\_DIAGONALS@{ALL\_RIGHT\_DIAGONALS}}
+\index{ALL\_RIGHT\_DIAGONALS@{ALL\_RIGHT\_DIAGONALS}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{ALL\_RIGHT\_DIAGONALS}{ALL\_RIGHT\_DIAGONALS}}
+{\footnotesize\ttfamily Map$<$Integer, \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+A\+L\+L\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+LS = new Hash\+Map$<$$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7e13c435631e2103ca928bf4fadf82ed}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7e13c435631e2103ca928bf4fadf82ed}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackBishops@{blackBishops}}
+\index{blackBishops@{blackBishops}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackBishops}{blackBishops}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Bishops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a40e3d664ebbd79a42bbc07d772b902f7}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a40e3d664ebbd79a42bbc07d772b902f7}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackKing@{blackKing}}
+\index{blackKing@{blackKing}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackKing}{blackKing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+King\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae2fffa79336cf907e600cafbc7445f52}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae2fffa79336cf907e600cafbc7445f52}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackKnights@{blackKnights}}
+\index{blackKnights@{blackKnights}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackKnights}{blackKnights}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Knights\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a8865f9dda39ec90b651b503ff10202e6}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a8865f9dda39ec90b651b503ff10202e6}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackLegalLocations@{blackLegalLocations}}
+\index{blackLegalLocations@{blackLegalLocations}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackLegalLocations}{blackLegalLocations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Legal\+Locations\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a907bb623a3fb398d7ee9fc94107bace8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a907bb623a3fb398d7ee9fc94107bace8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackPawns@{blackPawns}}
+\index{blackPawns@{blackPawns}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackPawns}{blackPawns}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Pawns\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_abd561a74647c18f2e15c8924cabc692e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_abd561a74647c18f2e15c8924cabc692e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackQueens@{blackQueens}}
+\index{blackQueens@{blackQueens}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackQueens}{blackQueens}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Queens\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_adcba2daabc248fe030e2b815e6252da8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_adcba2daabc248fe030e2b815e6252da8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!blackRooks@{blackRooks}}
+\index{blackRooks@{blackRooks}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{blackRooks}{blackRooks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+black\+Rooks\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa202f4295954b6045f2103e91054d396}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa202f4295954b6045f2103e91054d396}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!boardLegalMoves@{boardLegalMoves}}
+\index{boardLegalMoves@{boardLegalMoves}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{boardLegalMoves}{boardLegalMoves}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+board\+Legal\+Moves\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a926322af54a20b9fd2bcdaf5b179222e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a926322af54a20b9fd2bcdaf5b179222e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!EMPTY\_SET@{EMPTY\_SET}}
+\index{EMPTY\_SET@{EMPTY\_SET}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{EMPTY\_SET}{EMPTY\_SET}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+E\+M\+P\+T\+Y\+\_\+\+S\+ET = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a19eb4a2256e960871b2d638d51d3cccd}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a19eb4a2256e960871b2d638d51d3cccd}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_A@{FILE\_A}}
+\index{FILE\_A@{FILE\_A}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_A}{FILE\_A}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+A = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5a96272f99c46f5eb820cba07a7638dc}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5a96272f99c46f5eb820cba07a7638dc}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_B@{FILE\_B}}
+\index{FILE\_B@{FILE\_B}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_B}{FILE\_B}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+B = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a4014f5b7e28561f1a97448149bd50632}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a4014f5b7e28561f1a97448149bd50632}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_C@{FILE\_C}}
+\index{FILE\_C@{FILE\_C}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_C}{FILE\_C}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+C = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acaaf89972ce0bbf92a7cf7dbf280ed4f}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acaaf89972ce0bbf92a7cf7dbf280ed4f}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_D@{FILE\_D}}
+\index{FILE\_D@{FILE\_D}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_D}{FILE\_D}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+D = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a126875f362198ebcccb1794dda45c597}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a126875f362198ebcccb1794dda45c597}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_E@{FILE\_E}}
+\index{FILE\_E@{FILE\_E}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_E}{FILE\_E}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+E = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ac1289af8038d4cbc19a4f4b2af8d51be}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ac1289af8038d4cbc19a4f4b2af8d51be}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_F@{FILE\_F}}
+\index{FILE\_F@{FILE\_F}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_F}{FILE\_F}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+F = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a390d7db81c0bd453b95ccd7cc06d373c}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a390d7db81c0bd453b95ccd7cc06d373c}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_G@{FILE\_G}}
+\index{FILE\_G@{FILE\_G}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_G}{FILE\_G}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+G = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a001430ba2429224afb9d4ef5df91d849}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a001430ba2429224afb9d4ef5df91d849}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FILE\_H@{FILE\_H}}
+\index{FILE\_H@{FILE\_H}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FILE\_H}{FILE\_H}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+I\+L\+E\+\_\+H = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae91d0a05b44cc7159022db2510a0e37a}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae91d0a05b44cc7159022db2510a0e37a}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!FULL\_SET@{FULL\_SET}}
+\index{FULL\_SET@{FULL\_SET}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{FULL\_SET}{FULL\_SET}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+F\+U\+L\+L\+\_\+\+S\+ET = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95546639f4b3b9086e62bbd13433f3b7}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95546639f4b3b9086e62bbd13433f3b7}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_1@{LEFT\_DIAGONAL\_1}}
+\index{LEFT\_DIAGONAL\_1@{LEFT\_DIAGONAL\_1}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_1}{LEFT\_DIAGONAL\_1}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+1 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aac7d236c1d41059e0ab236599d3e21}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aac7d236c1d41059e0ab236599d3e21}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_10@{LEFT\_DIAGONAL\_10}}
+\index{LEFT\_DIAGONAL\_10@{LEFT\_DIAGONAL\_10}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_10}{LEFT\_DIAGONAL\_10}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+10 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a857b5864f7e9df04b82ef3f5bbc4a3e8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a857b5864f7e9df04b82ef3f5bbc4a3e8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_11@{LEFT\_DIAGONAL\_11}}
+\index{LEFT\_DIAGONAL\_11@{LEFT\_DIAGONAL\_11}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_11}{LEFT\_DIAGONAL\_11}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+11 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab30f141ba1a206889f14988652985828}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab30f141ba1a206889f14988652985828}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_12@{LEFT\_DIAGONAL\_12}}
+\index{LEFT\_DIAGONAL\_12@{LEFT\_DIAGONAL\_12}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_12}{LEFT\_DIAGONAL\_12}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+12 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acf583a9224ff9b14fe55a08faa947225}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acf583a9224ff9b14fe55a08faa947225}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_13@{LEFT\_DIAGONAL\_13}}
+\index{LEFT\_DIAGONAL\_13@{LEFT\_DIAGONAL\_13}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_13}{LEFT\_DIAGONAL\_13}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+13 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aaf0387d21f79b4e00eed0a172a84978e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aaf0387d21f79b4e00eed0a172a84978e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_14@{LEFT\_DIAGONAL\_14}}
+\index{LEFT\_DIAGONAL\_14@{LEFT\_DIAGONAL\_14}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_14}{LEFT\_DIAGONAL\_14}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+14 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a26a6515625b2ccdb4cc6bc6b15edaf73}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a26a6515625b2ccdb4cc6bc6b15edaf73}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_15@{LEFT\_DIAGONAL\_15}}
+\index{LEFT\_DIAGONAL\_15@{LEFT\_DIAGONAL\_15}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_15}{LEFT\_DIAGONAL\_15}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+15 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad7a2bd4c87af28df3e51158b32bd8636}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad7a2bd4c87af28df3e51158b32bd8636}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_2@{LEFT\_DIAGONAL\_2}}
+\index{LEFT\_DIAGONAL\_2@{LEFT\_DIAGONAL\_2}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_2}{LEFT\_DIAGONAL\_2}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+2 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5bfc2adb2f82f22b0c41603e04e38941}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a5bfc2adb2f82f22b0c41603e04e38941}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_3@{LEFT\_DIAGONAL\_3}}
+\index{LEFT\_DIAGONAL\_3@{LEFT\_DIAGONAL\_3}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_3}{LEFT\_DIAGONAL\_3}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+3 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aacdb9366c6820d32743fbd4049dc2162}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aacdb9366c6820d32743fbd4049dc2162}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_4@{LEFT\_DIAGONAL\_4}}
+\index{LEFT\_DIAGONAL\_4@{LEFT\_DIAGONAL\_4}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_4}{LEFT\_DIAGONAL\_4}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+4 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95813d02585c8a6b4c70223bd0598788}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a95813d02585c8a6b4c70223bd0598788}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_5@{LEFT\_DIAGONAL\_5}}
+\index{LEFT\_DIAGONAL\_5@{LEFT\_DIAGONAL\_5}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_5}{LEFT\_DIAGONAL\_5}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+5 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa714f18495204887126d270af48c0b51}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa714f18495204887126d270af48c0b51}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_6@{LEFT\_DIAGONAL\_6}}
+\index{LEFT\_DIAGONAL\_6@{LEFT\_DIAGONAL\_6}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_6}{LEFT\_DIAGONAL\_6}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+6 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aaf2f2560b103c6e9e4800a36921597}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7aaf2f2560b103c6e9e4800a36921597}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_7@{LEFT\_DIAGONAL\_7}}
+\index{LEFT\_DIAGONAL\_7@{LEFT\_DIAGONAL\_7}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_7}{LEFT\_DIAGONAL\_7}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+7 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2e7180090f80f4bf33eef9dfe2e5368e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a2e7180090f80f4bf33eef9dfe2e5368e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_8@{LEFT\_DIAGONAL\_8}}
+\index{LEFT\_DIAGONAL\_8@{LEFT\_DIAGONAL\_8}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_8}{LEFT\_DIAGONAL\_8}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+8 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9f3949eb68809de0fc4985535ad49f70}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9f3949eb68809de0fc4985535ad49f70}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!LEFT\_DIAGONAL\_9@{LEFT\_DIAGONAL\_9}}
+\index{LEFT\_DIAGONAL\_9@{LEFT\_DIAGONAL\_9}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{LEFT\_DIAGONAL\_9}{LEFT\_DIAGONAL\_9}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+L\+E\+F\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+9 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a87f2b1cc5fb80a0292612747f8689599}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a87f2b1cc5fb80a0292612747f8689599}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_1@{RANK\_1}}
+\index{RANK\_1@{RANK\_1}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_1}{RANK\_1}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+1 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a005b14157148e3131ddf3f62de20c973}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a005b14157148e3131ddf3f62de20c973}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_2@{RANK\_2}}
+\index{RANK\_2@{RANK\_2}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_2}{RANK\_2}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+2 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acea287f41ba6c0db58b0ded665c52735}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acea287f41ba6c0db58b0ded665c52735}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_3@{RANK\_3}}
+\index{RANK\_3@{RANK\_3}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_3}{RANK\_3}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+3 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab2c39b5fb7a81a4c990dee80ab6aebe8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab2c39b5fb7a81a4c990dee80ab6aebe8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_4@{RANK\_4}}
+\index{RANK\_4@{RANK\_4}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_4}{RANK\_4}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+4 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7f632bbac58213a759c63fcf8f92eb43}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7f632bbac58213a759c63fcf8f92eb43}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_5@{RANK\_5}}
+\index{RANK\_5@{RANK\_5}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_5}{RANK\_5}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+5 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a09122a73125ca1bb464818aec39844bc}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a09122a73125ca1bb464818aec39844bc}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_6@{RANK\_6}}
+\index{RANK\_6@{RANK\_6}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_6}{RANK\_6}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+6 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6f1bb32fff90a1b7010b81b80fee6cba}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a6f1bb32fff90a1b7010b81b80fee6cba}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_7@{RANK\_7}}
+\index{RANK\_7@{RANK\_7}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_7}{RANK\_7}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+7 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9c9fd7fe30bee6ebf6aaf3c293ff1953}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9c9fd7fe30bee6ebf6aaf3c293ff1953}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RANK\_8@{RANK\_8}}
+\index{RANK\_8@{RANK\_8}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RANK\_8}{RANK\_8}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+A\+N\+K\+\_\+8 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3dcde2d96c9a907d05c4d3b53b26cef7}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a3dcde2d96c9a907d05c4d3b53b26cef7}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_1@{RIGHT\_DIAGONAL\_1}}
+\index{RIGHT\_DIAGONAL\_1@{RIGHT\_DIAGONAL\_1}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_1}{RIGHT\_DIAGONAL\_1}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+1 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7cfb5450696aeb28bddd49085947f8fa}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a7cfb5450696aeb28bddd49085947f8fa}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_10@{RIGHT\_DIAGONAL\_10}}
+\index{RIGHT\_DIAGONAL\_10@{RIGHT\_DIAGONAL\_10}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_10}{RIGHT\_DIAGONAL\_10}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+10 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad5047fc0dbfb23ac04844d45d83a41e3}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ad5047fc0dbfb23ac04844d45d83a41e3}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_11@{RIGHT\_DIAGONAL\_11}}
+\index{RIGHT\_DIAGONAL\_11@{RIGHT\_DIAGONAL\_11}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_11}{RIGHT\_DIAGONAL\_11}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+11 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa1d75d641bd102dd7d27c3b0fa5add6c}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa1d75d641bd102dd7d27c3b0fa5add6c}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_12@{RIGHT\_DIAGONAL\_12}}
+\index{RIGHT\_DIAGONAL\_12@{RIGHT\_DIAGONAL\_12}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_12}{RIGHT\_DIAGONAL\_12}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+12 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_af70e1d730430b970758ac86adc719a36}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_af70e1d730430b970758ac86adc719a36}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_13@{RIGHT\_DIAGONAL\_13}}
+\index{RIGHT\_DIAGONAL\_13@{RIGHT\_DIAGONAL\_13}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_13}{RIGHT\_DIAGONAL\_13}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+13 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a55295419d848dfadcf50f550c22fe5b0}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a55295419d848dfadcf50f550c22fe5b0}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_14@{RIGHT\_DIAGONAL\_14}}
+\index{RIGHT\_DIAGONAL\_14@{RIGHT\_DIAGONAL\_14}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_14}{RIGHT\_DIAGONAL\_14}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+14 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa52061b74a98e0b34fb8fdfc399ac10a}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aa52061b74a98e0b34fb8fdfc399ac10a}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_15@{RIGHT\_DIAGONAL\_15}}
+\index{RIGHT\_DIAGONAL\_15@{RIGHT\_DIAGONAL\_15}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_15}{RIGHT\_DIAGONAL\_15}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+15 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aedb7e661b836d0b44c0069e3a365fa5d}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_aedb7e661b836d0b44c0069e3a365fa5d}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_2@{RIGHT\_DIAGONAL\_2}}
+\index{RIGHT\_DIAGONAL\_2@{RIGHT\_DIAGONAL\_2}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_2}{RIGHT\_DIAGONAL\_2}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+2 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a05fbfeb73ed231f2aa5b6137f059a816}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a05fbfeb73ed231f2aa5b6137f059a816}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_3@{RIGHT\_DIAGONAL\_3}}
+\index{RIGHT\_DIAGONAL\_3@{RIGHT\_DIAGONAL\_3}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_3}{RIGHT\_DIAGONAL\_3}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+3 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1dcc27abde3d74c347c5670aab68ca99}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1dcc27abde3d74c347c5670aab68ca99}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_4@{RIGHT\_DIAGONAL\_4}}
+\index{RIGHT\_DIAGONAL\_4@{RIGHT\_DIAGONAL\_4}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_4}{RIGHT\_DIAGONAL\_4}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+4 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a96efd74a7979ce53b0186f214341c164}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a96efd74a7979ce53b0186f214341c164}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_5@{RIGHT\_DIAGONAL\_5}}
+\index{RIGHT\_DIAGONAL\_5@{RIGHT\_DIAGONAL\_5}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_5}{RIGHT\_DIAGONAL\_5}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+5 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a44b83493608022faf170ad241e34bce8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a44b83493608022faf170ad241e34bce8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_6@{RIGHT\_DIAGONAL\_6}}
+\index{RIGHT\_DIAGONAL\_6@{RIGHT\_DIAGONAL\_6}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_6}{RIGHT\_DIAGONAL\_6}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+6 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a386aa21cc88e3e552a5faebe2b4cb4ee}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a386aa21cc88e3e552a5faebe2b4cb4ee}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_7@{RIGHT\_DIAGONAL\_7}}
+\index{RIGHT\_DIAGONAL\_7@{RIGHT\_DIAGONAL\_7}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_7}{RIGHT\_DIAGONAL\_7}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+7 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab5154add7b7a0c32b319e44136c5beef}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ab5154add7b7a0c32b319e44136c5beef}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_8@{RIGHT\_DIAGONAL\_8}}
+\index{RIGHT\_DIAGONAL\_8@{RIGHT\_DIAGONAL\_8}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_8}{RIGHT\_DIAGONAL\_8}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+8 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae4884846ea992f2c2ad036d49d6be6e8}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae4884846ea992f2c2ad036d49d6be6e8}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!RIGHT\_DIAGONAL\_9@{RIGHT\_DIAGONAL\_9}}
+\index{RIGHT\_DIAGONAL\_9@{RIGHT\_DIAGONAL\_9}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{RIGHT\_DIAGONAL\_9}{RIGHT\_DIAGONAL\_9}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+R\+I\+G\+H\+T\+\_\+\+D\+I\+A\+G\+O\+N\+A\+L\+\_\+9 = new \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a10d667e419ef546ff5fbab132580ad9e}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a10d667e419ef546ff5fbab132580ad9e}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteBishops@{whiteBishops}}
+\index{whiteBishops@{whiteBishops}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteBishops}{whiteBishops}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Bishops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1f810fcdcaad115b8da54adfffc2863a}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a1f810fcdcaad115b8da54adfffc2863a}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteKing@{whiteKing}}
+\index{whiteKing@{whiteKing}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteKing}{whiteKing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+King\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae6f5958b9c8907ddfc8310bcca87cfc6}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae6f5958b9c8907ddfc8310bcca87cfc6}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteKnights@{whiteKnights}}
+\index{whiteKnights@{whiteKnights}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteKnights}{whiteKnights}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Knights\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acb30850f7d529c2d709e8dd82c9199c6}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acb30850f7d529c2d709e8dd82c9199c6}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteLegalLocations@{whiteLegalLocations}}
+\index{whiteLegalLocations@{whiteLegalLocations}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteLegalLocations}{whiteLegalLocations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Legal\+Locations\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a57763cf0934100e24b79394bd06bd96c}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a57763cf0934100e24b79394bd06bd96c}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whitePawns@{whitePawns}}
+\index{whitePawns@{whitePawns}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whitePawns}{whitePawns}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Pawns\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9afc0921605a472a4143f7898c3d6e0c}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a9afc0921605a472a4143f7898c3d6e0c}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteQueens@{whiteQueens}}
+\index{whiteQueens@{whiteQueens}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteQueens}{whiteQueens}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Queens\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a296b28529366f3f5db38f17b5a892986}\label{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_a296b28529366f3f5db38f17b5a892986}} 
+\index{com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}!whiteRooks@{whiteRooks}}
+\index{whiteRooks@{whiteRooks}!com.chess.engine.bitboards.BitBoard@{com.chess.engine.bitboards.BitBoard}}
+\subsubsection{\texorpdfstring{whiteRooks}{whiteRooks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+white\+Rooks\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_bit_board_8java}{Bit\+Board.\+java}}\end{DoxyCompactItemize}

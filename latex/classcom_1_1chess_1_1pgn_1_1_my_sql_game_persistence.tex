@@ -1,0 +1,208 @@
+\hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{}\section{com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence Class Reference}
+\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+Inheritance diagram for com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a7faec01db9c72e7ef04b63a982013c21}{persist\+Game}} (final \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_game}{Game}} game)
+\item 
+Move \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a05fad44f338992121a0ec6c474fddf93}{get\+Next\+Best\+Move}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final Player player, final String game\+Text)
+\item 
+int \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a896b118a83ff72a7650eaad651ec804e}{get\+Max\+Game\+Row}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}} \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a77127a9520a99b8a636bb19d8ffb346b}{get}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a14f78ef2805a49000da78a79d77cf473}{My\+Sql\+Game\+Persistence}} ()
+\item 
+Move \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_aa0eb23b80e56b47f74ace023101276af}{query\+Best\+Move}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final Player player, final String game\+Text)
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a0da894bb713f835ea2972a7b022c7254}{create\+Game\+Table}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a6a1b5245ef86397388d5d5a1affed3cc}{create\+Index}} (final String column\+Name, final String index\+Name)
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a3960f9f55641667b981fb2a7018edcbf}{create\+Outcome\+Index}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a664a6c22af5ddebda42b1e9b0ab70e55}{create\+Moves\+Index}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a255fc537c379fac0a8a8155ed624714d}{execute\+Persist}} (final \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_game}{Game}} game)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Connection \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_ab2811815b3e6d6c969555d1a9eac1c30}{create\+D\+B\+Connection}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Connection \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a8a24839d8077329900ec5443b493d88f}{db\+Connection}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}} \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_adf58e31268ce6cc5cb9fb8476256e063}{I\+N\+S\+T\+A\+N\+CE}} = new \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}}()
+\item 
+static final String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a31e9975542030076c68b9315e77a77b6}{J\+D\+B\+C\+\_\+\+D\+R\+I\+V\+ER}} = \char`\"{}com.\+mysql.\+cj.\+jdbc.\+Driver\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a372a5459afcbd00b6e55d6eca24208ed}{D\+B\+\_\+\+U\+RL}} = \char`\"{}jdbc\+:mysql\+://localhost/chessgames\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_af4ac5abc03d5ba43828ab4d7e58fb281}{U\+S\+ER}} = \char`\"{}root\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a243f4f83fb0c949343435289c8a33e68}{P\+A\+SS}} = \char`\"{}powerpc123\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a766fe9b1704fb165e9f75d8345260ad3}{N\+E\+X\+T\+\_\+\+B\+E\+S\+T\+\_\+\+M\+O\+V\+E\+\_\+\+Q\+U\+E\+RY}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a14f78ef2805a49000da78a79d77cf473}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a14f78ef2805a49000da78a79d77cf473}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!MySqlGamePersistence@{MySqlGamePersistence}}
+\index{MySqlGamePersistence@{MySqlGamePersistence}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{MySqlGamePersistence()}{MySqlGamePersistence()}}
+{\footnotesize\ttfamily com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+My\+Sql\+Game\+Persistence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_ab2811815b3e6d6c969555d1a9eac1c30}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_ab2811815b3e6d6c969555d1a9eac1c30}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!createDBConnection@{createDBConnection}}
+\index{createDBConnection@{createDBConnection}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{createDBConnection()}{createDBConnection()}}
+{\footnotesize\ttfamily static Connection com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+create\+D\+B\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a0da894bb713f835ea2972a7b022c7254}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a0da894bb713f835ea2972a7b022c7254}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!createGameTable@{createGameTable}}
+\index{createGameTable@{createGameTable}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{createGameTable()}{createGameTable()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+create\+Game\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a6a1b5245ef86397388d5d5a1affed3cc}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a6a1b5245ef86397388d5d5a1affed3cc}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!createIndex@{createIndex}}
+\index{createIndex@{createIndex}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{createIndex()}{createIndex()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+create\+Index (\begin{DoxyParamCaption}\item[{final String}]{column\+Name,  }\item[{final String}]{index\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a664a6c22af5ddebda42b1e9b0ab70e55}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a664a6c22af5ddebda42b1e9b0ab70e55}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!createMovesIndex@{createMovesIndex}}
+\index{createMovesIndex@{createMovesIndex}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{createMovesIndex()}{createMovesIndex()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+create\+Moves\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a3960f9f55641667b981fb2a7018edcbf}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a3960f9f55641667b981fb2a7018edcbf}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!createOutcomeIndex@{createOutcomeIndex}}
+\index{createOutcomeIndex@{createOutcomeIndex}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{createOutcomeIndex()}{createOutcomeIndex()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+create\+Outcome\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a255fc537c379fac0a8a8155ed624714d}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a255fc537c379fac0a8a8155ed624714d}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!executePersist@{executePersist}}
+\index{executePersist@{executePersist}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{executePersist()}{executePersist()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+execute\+Persist (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_game}{Game}}}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a77127a9520a99b8a636bb19d8ffb346b}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a77127a9520a99b8a636bb19d8ffb346b}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!get@{get}}
+\index{get@{get}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}} com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a896b118a83ff72a7650eaad651ec804e}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a896b118a83ff72a7650eaad651ec804e}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!getMaxGameRow@{getMaxGameRow}}
+\index{getMaxGameRow@{getMaxGameRow}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{getMaxGameRow()}{getMaxGameRow()}}
+{\footnotesize\ttfamily int com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+get\+Max\+Game\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a05fad44f338992121a0ec6c474fddf93}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a05fad44f338992121a0ec6c474fddf93}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!getNextBestMove@{getNextBestMove}}
+\index{getNextBestMove@{getNextBestMove}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{getNextBestMove()}{getNextBestMove()}}
+{\footnotesize\ttfamily Move com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+get\+Next\+Best\+Move (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final Player}]{player,  }\item[{final String}]{game\+Text }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1chess_1_1pgn_1_1_p_g_n_persistence_a60257b57a23c0616ea28233c91221429}{com.\+chess.\+pgn.\+P\+G\+N\+Persistence}}.
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a7faec01db9c72e7ef04b63a982013c21}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a7faec01db9c72e7ef04b63a982013c21}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!persistGame@{persistGame}}
+\index{persistGame@{persistGame}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{persistGame()}{persistGame()}}
+{\footnotesize\ttfamily void com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+persist\+Game (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_game}{Game}}}]{game }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1chess_1_1pgn_1_1_p_g_n_persistence_a144870869633d521938c6de252a9d653}{com.\+chess.\+pgn.\+P\+G\+N\+Persistence}}.
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_aa0eb23b80e56b47f74ace023101276af}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_aa0eb23b80e56b47f74ace023101276af}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!queryBestMove@{queryBestMove}}
+\index{queryBestMove@{queryBestMove}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{queryBestMove()}{queryBestMove()}}
+{\footnotesize\ttfamily Move com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+query\+Best\+Move (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final Player}]{player,  }\item[{final String}]{game\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a372a5459afcbd00b6e55d6eca24208ed}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a372a5459afcbd00b6e55d6eca24208ed}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!DB\_URL@{DB\_URL}}
+\index{DB\_URL@{DB\_URL}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{DB\_URL}{DB\_URL}}
+{\footnotesize\ttfamily final String com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+D\+B\+\_\+\+U\+RL = \char`\"{}jdbc\+:mysql\+://localhost/chessgames\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a8a24839d8077329900ec5443b493d88f}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a8a24839d8077329900ec5443b493d88f}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!dbConnection@{dbConnection}}
+\index{dbConnection@{dbConnection}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{dbConnection}{dbConnection}}
+{\footnotesize\ttfamily final Connection com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+db\+Connection\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_adf58e31268ce6cc5cb9fb8476256e063}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_adf58e31268ce6cc5cb9fb8476256e063}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!INSTANCE@{INSTANCE}}
+\index{INSTANCE@{INSTANCE}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{INSTANCE}{INSTANCE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}} com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+I\+N\+S\+T\+A\+N\+CE = new \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence}{My\+Sql\+Game\+Persistence}}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a31e9975542030076c68b9315e77a77b6}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a31e9975542030076c68b9315e77a77b6}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!JDBC\_DRIVER@{JDBC\_DRIVER}}
+\index{JDBC\_DRIVER@{JDBC\_DRIVER}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{JDBC\_DRIVER}{JDBC\_DRIVER}}
+{\footnotesize\ttfamily final String com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+J\+D\+B\+C\+\_\+\+D\+R\+I\+V\+ER = \char`\"{}com.\+mysql.\+cj.\+jdbc.\+Driver\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a766fe9b1704fb165e9f75d8345260ad3}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a766fe9b1704fb165e9f75d8345260ad3}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!NEXT\_BEST\_MOVE\_QUERY@{NEXT\_BEST\_MOVE\_QUERY}}
+\index{NEXT\_BEST\_MOVE\_QUERY@{NEXT\_BEST\_MOVE\_QUERY}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{NEXT\_BEST\_MOVE\_QUERY}{NEXT\_BEST\_MOVE\_QUERY}}
+{\footnotesize\ttfamily final String com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+N\+E\+X\+T\+\_\+\+B\+E\+S\+T\+\_\+\+M\+O\+V\+E\+\_\+\+Q\+U\+E\+RY\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \textcolor{stringliteral}{"SELECT SUBSTR(g1.moves, LENGTH('\%s') + \%d, INSTR(SUBSTR(g1.moves, LENGTH('\%s') + \%d, LENGTH(g1.moves)), ',') - 1), "} +}
+\DoxyCodeLine{        \textcolor{stringliteral}{"COUNT(*) FROM game g1 WHERE g1.moves LIKE '\%s\%\%' AND (outcome = '\%s') GROUP BY substr(g1.moves, LENGTH('\%s') + \%d, "} +}
+\DoxyCodeLine{        \textcolor{stringliteral}{"INSTR(substr(g1.moves, LENGTH('\%s') + \%d, LENGTH(g1.moves)), ',') - 1) ORDER BY 2 DESC"}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a243f4f83fb0c949343435289c8a33e68}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_a243f4f83fb0c949343435289c8a33e68}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!PASS@{PASS}}
+\index{PASS@{PASS}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{PASS}{PASS}}
+{\footnotesize\ttfamily final String com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+P\+A\+SS = \char`\"{}powerpc123\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_af4ac5abc03d5ba43828ab4d7e58fb281}\label{classcom_1_1chess_1_1pgn_1_1_my_sql_game_persistence_af4ac5abc03d5ba43828ab4d7e58fb281}} 
+\index{com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}!USER@{USER}}
+\index{USER@{USER}!com.chess.pgn.MySqlGamePersistence@{com.chess.pgn.MySqlGamePersistence}}
+\subsubsection{\texorpdfstring{USER}{USER}}
+{\footnotesize\ttfamily final String com.\+chess.\+pgn.\+My\+Sql\+Game\+Persistence.\+U\+S\+ER = \char`\"{}root\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_my_sql_game_persistence_8java}{My\+Sql\+Game\+Persistence.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities}{}\section{com.\+chess.\+pgn.\+Fen\+Utilities Class Reference}
+\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities}\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_afbf8cd13d7769f998f599cb6698377c7}{create\+Game\+From\+F\+EN}} (final String fen\+String)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a2e34ed19fd0427da5ff132ea2bc96913}{create\+F\+E\+N\+From\+Game}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a500f5de0350946605fb139958d650255}{Fen\+Utilities}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1a43610bf076ec333ae7ceaf760a4f79}{parse\+F\+EN}} (final String fen\+String)
+\item 
+static Alliance \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_abeaac0be72403204f3b07f0d04ee04b6}{move\+Maker}} (final String move\+Maker\+String)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aba302a0f866ba7ed6e072979c4c4c724}{white\+King\+Side\+Castle}} (final String fen\+Castle\+String)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_ac20a5272906e6654c5a448f727ebf899}{white\+Queen\+Side\+Castle}} (final String fen\+Castle\+String)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a11d884f9656261f8438b15d8b328137f}{black\+King\+Side\+Castle}} (final String fen\+Castle\+String)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a050faa1ae75188bb607087834c0bcc4b}{black\+Queen\+Side\+Castle}} (final String fen\+Castle\+String)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aeb0384af3b05319ac44d90b9e3b52866}{calculate\+Castle\+Text}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a856ef343035ee3d04745303077484723}{calculate\+En\+Passant\+Square}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aad23dbd3b7cbfd8f9d168de61f7ac278}{calculate\+Board\+Text}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1ed8fafa82f6feb8f22da59609a832f0}{calculate\+Current\+Player\+Text}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a500f5de0350946605fb139958d650255}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a500f5de0350946605fb139958d650255}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!FenUtilities@{FenUtilities}}
+\index{FenUtilities@{FenUtilities}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{FenUtilities()}{FenUtilities()}}
+{\footnotesize\ttfamily com.\+chess.\+pgn.\+Fen\+Utilities.\+Fen\+Utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a11d884f9656261f8438b15d8b328137f}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a11d884f9656261f8438b15d8b328137f}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!blackKingSideCastle@{blackKingSideCastle}}
+\index{blackKingSideCastle@{blackKingSideCastle}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{blackKingSideCastle()}{blackKingSideCastle()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+Fen\+Utilities.\+black\+King\+Side\+Castle (\begin{DoxyParamCaption}\item[{final String}]{fen\+Castle\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a050faa1ae75188bb607087834c0bcc4b}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a050faa1ae75188bb607087834c0bcc4b}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!blackQueenSideCastle@{blackQueenSideCastle}}
+\index{blackQueenSideCastle@{blackQueenSideCastle}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{blackQueenSideCastle()}{blackQueenSideCastle()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+Fen\+Utilities.\+black\+Queen\+Side\+Castle (\begin{DoxyParamCaption}\item[{final String}]{fen\+Castle\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aad23dbd3b7cbfd8f9d168de61f7ac278}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aad23dbd3b7cbfd8f9d168de61f7ac278}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!calculateBoardText@{calculateBoardText}}
+\index{calculateBoardText@{calculateBoardText}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{calculateBoardText()}{calculateBoardText()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+Fen\+Utilities.\+calculate\+Board\+Text (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aeb0384af3b05319ac44d90b9e3b52866}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aeb0384af3b05319ac44d90b9e3b52866}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!calculateCastleText@{calculateCastleText}}
+\index{calculateCastleText@{calculateCastleText}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{calculateCastleText()}{calculateCastleText()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+Fen\+Utilities.\+calculate\+Castle\+Text (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1ed8fafa82f6feb8f22da59609a832f0}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1ed8fafa82f6feb8f22da59609a832f0}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!calculateCurrentPlayerText@{calculateCurrentPlayerText}}
+\index{calculateCurrentPlayerText@{calculateCurrentPlayerText}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{calculateCurrentPlayerText()}{calculateCurrentPlayerText()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+Fen\+Utilities.\+calculate\+Current\+Player\+Text (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a856ef343035ee3d04745303077484723}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a856ef343035ee3d04745303077484723}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!calculateEnPassantSquare@{calculateEnPassantSquare}}
+\index{calculateEnPassantSquare@{calculateEnPassantSquare}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{calculateEnPassantSquare()}{calculateEnPassantSquare()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+Fen\+Utilities.\+calculate\+En\+Passant\+Square (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a2e34ed19fd0427da5ff132ea2bc96913}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a2e34ed19fd0427da5ff132ea2bc96913}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!createFENFromGame@{createFENFromGame}}
+\index{createFENFromGame@{createFENFromGame}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{createFENFromGame()}{createFENFromGame()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+Fen\+Utilities.\+create\+F\+E\+N\+From\+Game (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_afbf8cd13d7769f998f599cb6698377c7}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_afbf8cd13d7769f998f599cb6698377c7}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!createGameFromFEN@{createGameFromFEN}}
+\index{createGameFromFEN@{createGameFromFEN}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{createGameFromFEN()}{createGameFromFEN()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} com.\+chess.\+pgn.\+Fen\+Utilities.\+create\+Game\+From\+F\+EN (\begin{DoxyParamCaption}\item[{final String}]{fen\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_abeaac0be72403204f3b07f0d04ee04b6}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_abeaac0be72403204f3b07f0d04ee04b6}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!moveMaker@{moveMaker}}
+\index{moveMaker@{moveMaker}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{moveMaker()}{moveMaker()}}
+{\footnotesize\ttfamily static Alliance com.\+chess.\+pgn.\+Fen\+Utilities.\+move\+Maker (\begin{DoxyParamCaption}\item[{final String}]{move\+Maker\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1a43610bf076ec333ae7ceaf760a4f79}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_a1a43610bf076ec333ae7ceaf760a4f79}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!parseFEN@{parseFEN}}
+\index{parseFEN@{parseFEN}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{parseFEN()}{parseFEN()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} com.\+chess.\+pgn.\+Fen\+Utilities.\+parse\+F\+EN (\begin{DoxyParamCaption}\item[{final String}]{fen\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aba302a0f866ba7ed6e072979c4c4c724}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_aba302a0f866ba7ed6e072979c4c4c724}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!whiteKingSideCastle@{whiteKingSideCastle}}
+\index{whiteKingSideCastle@{whiteKingSideCastle}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{whiteKingSideCastle()}{whiteKingSideCastle()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+Fen\+Utilities.\+white\+King\+Side\+Castle (\begin{DoxyParamCaption}\item[{final String}]{fen\+Castle\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_fen_utilities_ac20a5272906e6654c5a448f727ebf899}\label{classcom_1_1chess_1_1pgn_1_1_fen_utilities_ac20a5272906e6654c5a448f727ebf899}} 
+\index{com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}!whiteQueenSideCastle@{whiteQueenSideCastle}}
+\index{whiteQueenSideCastle@{whiteQueenSideCastle}!com.chess.pgn.FenUtilities@{com.chess.pgn.FenUtilities}}
+\subsubsection{\texorpdfstring{whiteQueenSideCastle()}{whiteQueenSideCastle()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+Fen\+Utilities.\+white\+Queen\+Side\+Castle (\begin{DoxyParamCaption}\item[{final String}]{fen\+Castle\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_fen_utilities_8java}{Fen\+Utilities.\+java}}\end{DoxyCompactItemize}

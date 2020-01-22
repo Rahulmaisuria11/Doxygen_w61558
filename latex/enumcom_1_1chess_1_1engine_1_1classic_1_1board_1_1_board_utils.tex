@@ -1,0 +1,311 @@
+\hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils}{}\section{com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils Enum Reference}
+\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils}\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_acf917640c591cfc0cec01d15908ae6bf}{get\+Coordinate\+At\+Position}} (final String position)
+\item 
+String \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a90f133b3561f0b4209e9cea03582b6e8}{get\+Position\+At\+Coordinate}} (final int coordinate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ab808c5f614eba8ab2dfbfc114ae0f01a}{is\+Valid\+Tile\+Coordinate}} (final int coordinate)
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a229c8f734411d22e6797d35938106dd6}{is\+Threatened\+Board\+Immediate}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0f8cd610254cc5baf8bb61e7d4db12a2}{king\+Threat}} (final Move move)
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a686295630220d770b9449d665fe51880}{is\+King\+Pawn\+Trap}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final King king, final int front\+Tile)
+\item 
+static int \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59daccec51f4479f40c7e5da7d6b8dd8}{mvvlva}} (final Move move)
+\item 
+static List$<$ Move $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_adb05e2966404897b74e348333317a68c}{last\+N\+Moves}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, int N)
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a04ec20b157019ef594fe5e1ccf3cc640}{is\+End\+Game}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac27de729aefc5b097112f712f110ef4f}{I\+N\+S\+T\+A\+N\+CE}}
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8d6543714fe537d1a8feae414fcbd292}{F\+I\+R\+S\+T\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(0)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ad9318357de9002219841e8ff2e719b68}{S\+E\+C\+O\+N\+D\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(1)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_aaaeaac479235ba0d70898e0d18d22f20}{T\+H\+I\+R\+D\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(2)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0ad97ad2ee0708d15555e43e0576bece}{F\+O\+U\+R\+T\+H\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(3)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a66842e7b52c94d0639f3620fb85675b1}{F\+I\+F\+T\+H\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(4)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a9372beec288eace348fdce5f2fca876a}{S\+I\+X\+T\+H\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(5)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a41ecb84ff9a5112a09316afa3b0accc7}{S\+E\+V\+E\+N\+T\+H\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(6)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a7bc4cce90273bba562122279580daea7}{E\+I\+G\+H\+T\+H\+\_\+\+C\+O\+L\+U\+MN}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(7)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a236586cb1e8b70ada3bb2dfad8b9c1e4}{F\+I\+R\+S\+T\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(0)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a3c1a7fcc84271e55b800fe70509db389}{S\+E\+C\+O\+N\+D\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(8)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a1586314b421d641c7b8365956e7d7a90}{T\+H\+I\+R\+D\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(16)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4388b92dd875dd81cb5cbe225137c862}{F\+O\+U\+R\+T\+H\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(24)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5086d6af079dba75527facf55b4f48c2}{F\+I\+F\+T\+H\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(32)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac81402a0f300719939cb5a0dfbf8c588}{S\+I\+X\+T\+H\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(40)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a578afd2d8aef137c34a94cb45730fd29}{S\+E\+V\+E\+N\+T\+H\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(48)
+\item 
+final List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5764fcb309884bd508bacc64adf5ef89}{E\+I\+G\+H\+T\+H\+\_\+\+R\+OW}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(56)
+\item 
+final List$<$ String $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac516f4c4def4ab1a65400e8ed6a66f2a}{A\+L\+G\+E\+B\+R\+A\+I\+C\+\_\+\+N\+O\+T\+A\+T\+I\+ON}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a32d498ecee277f23032f5df8ff25cedd}{initialize\+Algebraic\+Notation}}()
+\item 
+final Map$<$ String, Integer $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4eb835fa2bd840a4e901f1d1bacf8f0b}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+T\+O\+\_\+\+C\+O\+O\+R\+D\+I\+N\+A\+TE}} = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a77b348bf1e79db761e1e96e5de3d238f}{initialize\+Position\+To\+Coordinate\+Map}}()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a19d1d65e468b6348d7ee3b6c3c506a41}{S\+T\+A\+R\+T\+\_\+\+T\+I\+L\+E\+\_\+\+I\+N\+D\+EX}} = 0
+\item 
+static final int \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8bee373c2a407ee69b244e17dca9f9a0}{N\+U\+M\+\_\+\+T\+I\+L\+E\+S\+\_\+\+P\+E\+R\+\_\+\+R\+OW}} = 8
+\item 
+static final int \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59b3e0ca2f94fc613253fdb36ecb238e}{N\+U\+M\+\_\+\+T\+I\+L\+ES}} = 64
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ String, Integer $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a77b348bf1e79db761e1e96e5de3d238f}{initialize\+Position\+To\+Coordinate\+Map}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}} (int column\+Number)
+\item 
+static List$<$ Boolean $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}} (int row\+Number)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a32d498ecee277f23032f5df8ff25cedd}{initialize\+Algebraic\+Notation}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_acf917640c591cfc0cec01d15908ae6bf}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_acf917640c591cfc0cec01d15908ae6bf}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!getCoordinateAtPosition@{getCoordinateAtPosition}}
+\index{getCoordinateAtPosition@{getCoordinateAtPosition}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{getCoordinateAtPosition()}{getCoordinateAtPosition()}}
+{\footnotesize\ttfamily int com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+get\+Coordinate\+At\+Position (\begin{DoxyParamCaption}\item[{final String}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a90f133b3561f0b4209e9cea03582b6e8}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a90f133b3561f0b4209e9cea03582b6e8}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!getPositionAtCoordinate@{getPositionAtCoordinate}}
+\index{getPositionAtCoordinate@{getPositionAtCoordinate}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{getPositionAtCoordinate()}{getPositionAtCoordinate()}}
+{\footnotesize\ttfamily String com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+get\+Position\+At\+Coordinate (\begin{DoxyParamCaption}\item[{final int}]{coordinate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!initColumn@{initColumn}}
+\index{initColumn@{initColumn}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{initColumn()}{initColumn()}}
+{\footnotesize\ttfamily static List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+init\+Column (\begin{DoxyParamCaption}\item[{int}]{column\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a32d498ecee277f23032f5df8ff25cedd}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a32d498ecee277f23032f5df8ff25cedd}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!initializeAlgebraicNotation@{initializeAlgebraicNotation}}
+\index{initializeAlgebraicNotation@{initializeAlgebraicNotation}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{initializeAlgebraicNotation()}{initializeAlgebraicNotation()}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+initialize\+Algebraic\+Notation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a77b348bf1e79db761e1e96e5de3d238f}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a77b348bf1e79db761e1e96e5de3d238f}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!initializePositionToCoordinateMap@{initializePositionToCoordinateMap}}
+\index{initializePositionToCoordinateMap@{initializePositionToCoordinateMap}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{initializePositionToCoordinateMap()}{initializePositionToCoordinateMap()}}
+{\footnotesize\ttfamily Map$<$String, Integer$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+initialize\+Position\+To\+Coordinate\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!initRow@{initRow}}
+\index{initRow@{initRow}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{initRow()}{initRow()}}
+{\footnotesize\ttfamily static List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+init\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a04ec20b157019ef594fe5e1ccf3cc640}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a04ec20b157019ef594fe5e1ccf3cc640}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!isEndGame@{isEndGame}}
+\index{isEndGame@{isEndGame}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{isEndGame()}{isEndGame()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+is\+End\+Game (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a686295630220d770b9449d665fe51880}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a686295630220d770b9449d665fe51880}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!isKingPawnTrap@{isKingPawnTrap}}
+\index{isKingPawnTrap@{isKingPawnTrap}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{isKingPawnTrap()}{isKingPawnTrap()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+is\+King\+Pawn\+Trap (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final King}]{king,  }\item[{final int}]{front\+Tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a229c8f734411d22e6797d35938106dd6}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a229c8f734411d22e6797d35938106dd6}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!isThreatenedBoardImmediate@{isThreatenedBoardImmediate}}
+\index{isThreatenedBoardImmediate@{isThreatenedBoardImmediate}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{isThreatenedBoardImmediate()}{isThreatenedBoardImmediate()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+is\+Threatened\+Board\+Immediate (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ab808c5f614eba8ab2dfbfc114ae0f01a}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ab808c5f614eba8ab2dfbfc114ae0f01a}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!isValidTileCoordinate@{isValidTileCoordinate}}
+\index{isValidTileCoordinate@{isValidTileCoordinate}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{isValidTileCoordinate()}{isValidTileCoordinate()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+is\+Valid\+Tile\+Coordinate (\begin{DoxyParamCaption}\item[{final int}]{coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0f8cd610254cc5baf8bb61e7d4db12a2}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0f8cd610254cc5baf8bb61e7d4db12a2}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!kingThreat@{kingThreat}}
+\index{kingThreat@{kingThreat}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{kingThreat()}{kingThreat()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+king\+Threat (\begin{DoxyParamCaption}\item[{final Move}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_adb05e2966404897b74e348333317a68c}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_adb05e2966404897b74e348333317a68c}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!lastNMoves@{lastNMoves}}
+\index{lastNMoves@{lastNMoves}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{lastNMoves()}{lastNMoves()}}
+{\footnotesize\ttfamily static List$<$Move$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+last\+N\+Moves (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{int}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59daccec51f4479f40c7e5da7d6b8dd8}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59daccec51f4479f40c7e5da7d6b8dd8}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!mvvlva@{mvvlva}}
+\index{mvvlva@{mvvlva}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{mvvlva()}{mvvlva()}}
+{\footnotesize\ttfamily static int com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+mvvlva (\begin{DoxyParamCaption}\item[{final Move}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac516f4c4def4ab1a65400e8ed6a66f2a}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac516f4c4def4ab1a65400e8ed6a66f2a}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!ALGEBRAIC\_NOTATION@{ALGEBRAIC\_NOTATION}}
+\index{ALGEBRAIC\_NOTATION@{ALGEBRAIC\_NOTATION}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{ALGEBRAIC\_NOTATION}{ALGEBRAIC\_NOTATION}}
+{\footnotesize\ttfamily final List$<$String$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+A\+L\+G\+E\+B\+R\+A\+I\+C\+\_\+\+N\+O\+T\+A\+T\+I\+ON = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a32d498ecee277f23032f5df8ff25cedd}{initialize\+Algebraic\+Notation}}()}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a7bc4cce90273bba562122279580daea7}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a7bc4cce90273bba562122279580daea7}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!EIGHTH\_COLUMN@{EIGHTH\_COLUMN}}
+\index{EIGHTH\_COLUMN@{EIGHTH\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{EIGHTH\_COLUMN}{EIGHTH\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+E\+I\+G\+H\+T\+H\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(7)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5764fcb309884bd508bacc64adf5ef89}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5764fcb309884bd508bacc64adf5ef89}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!EIGHTH\_ROW@{EIGHTH\_ROW}}
+\index{EIGHTH\_ROW@{EIGHTH\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{EIGHTH\_ROW}{EIGHTH\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+E\+I\+G\+H\+T\+H\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(56)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a66842e7b52c94d0639f3620fb85675b1}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a66842e7b52c94d0639f3620fb85675b1}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FIFTH\_COLUMN@{FIFTH\_COLUMN}}
+\index{FIFTH\_COLUMN@{FIFTH\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FIFTH\_COLUMN}{FIFTH\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+I\+F\+T\+H\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(4)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5086d6af079dba75527facf55b4f48c2}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a5086d6af079dba75527facf55b4f48c2}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FIFTH\_ROW@{FIFTH\_ROW}}
+\index{FIFTH\_ROW@{FIFTH\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FIFTH\_ROW}{FIFTH\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+I\+F\+T\+H\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(32)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8d6543714fe537d1a8feae414fcbd292}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8d6543714fe537d1a8feae414fcbd292}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FIRST\_COLUMN@{FIRST\_COLUMN}}
+\index{FIRST\_COLUMN@{FIRST\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FIRST\_COLUMN}{FIRST\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+I\+R\+S\+T\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(0)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a236586cb1e8b70ada3bb2dfad8b9c1e4}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a236586cb1e8b70ada3bb2dfad8b9c1e4}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FIRST\_ROW@{FIRST\_ROW}}
+\index{FIRST\_ROW@{FIRST\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FIRST\_ROW}{FIRST\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+I\+R\+S\+T\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(0)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0ad97ad2ee0708d15555e43e0576bece}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a0ad97ad2ee0708d15555e43e0576bece}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FOURTH\_COLUMN@{FOURTH\_COLUMN}}
+\index{FOURTH\_COLUMN@{FOURTH\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FOURTH\_COLUMN}{FOURTH\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+O\+U\+R\+T\+H\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(3)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4388b92dd875dd81cb5cbe225137c862}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4388b92dd875dd81cb5cbe225137c862}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!FOURTH\_ROW@{FOURTH\_ROW}}
+\index{FOURTH\_ROW@{FOURTH\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{FOURTH\_ROW}{FOURTH\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+F\+O\+U\+R\+T\+H\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(24)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac27de729aefc5b097112f712f110ef4f}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac27de729aefc5b097112f712f110ef4f}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!INSTANCE@{INSTANCE}}
+\index{INSTANCE@{INSTANCE}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{INSTANCE}{INSTANCE}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+I\+N\+S\+T\+A\+N\+CE}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59b3e0ca2f94fc613253fdb36ecb238e}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a59b3e0ca2f94fc613253fdb36ecb238e}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!NUM\_TILES@{NUM\_TILES}}
+\index{NUM\_TILES@{NUM\_TILES}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{NUM\_TILES}{NUM\_TILES}}
+{\footnotesize\ttfamily  static  final int com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+N\+U\+M\+\_\+\+T\+I\+L\+ES = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8bee373c2a407ee69b244e17dca9f9a0}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a8bee373c2a407ee69b244e17dca9f9a0}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!NUM\_TILES\_PER\_ROW@{NUM\_TILES\_PER\_ROW}}
+\index{NUM\_TILES\_PER\_ROW@{NUM\_TILES\_PER\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{NUM\_TILES\_PER\_ROW}{NUM\_TILES\_PER\_ROW}}
+{\footnotesize\ttfamily  static  final int com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+N\+U\+M\+\_\+\+T\+I\+L\+E\+S\+\_\+\+P\+E\+R\+\_\+\+R\+OW = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4eb835fa2bd840a4e901f1d1bacf8f0b}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a4eb835fa2bd840a4e901f1d1bacf8f0b}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!POSITION\_TO\_COORDINATE@{POSITION\_TO\_COORDINATE}}
+\index{POSITION\_TO\_COORDINATE@{POSITION\_TO\_COORDINATE}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{POSITION\_TO\_COORDINATE}{POSITION\_TO\_COORDINATE}}
+{\footnotesize\ttfamily final Map$<$String, Integer$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+T\+O\+\_\+\+C\+O\+O\+R\+D\+I\+N\+A\+TE = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a77b348bf1e79db761e1e96e5de3d238f}{initialize\+Position\+To\+Coordinate\+Map}}()}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ad9318357de9002219841e8ff2e719b68}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ad9318357de9002219841e8ff2e719b68}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SECOND\_COLUMN@{SECOND\_COLUMN}}
+\index{SECOND\_COLUMN@{SECOND\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SECOND\_COLUMN}{SECOND\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+E\+C\+O\+N\+D\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(1)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a3c1a7fcc84271e55b800fe70509db389}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a3c1a7fcc84271e55b800fe70509db389}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SECOND\_ROW@{SECOND\_ROW}}
+\index{SECOND\_ROW@{SECOND\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SECOND\_ROW}{SECOND\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+E\+C\+O\+N\+D\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(8)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a41ecb84ff9a5112a09316afa3b0accc7}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a41ecb84ff9a5112a09316afa3b0accc7}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SEVENTH\_COLUMN@{SEVENTH\_COLUMN}}
+\index{SEVENTH\_COLUMN@{SEVENTH\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SEVENTH\_COLUMN}{SEVENTH\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+E\+V\+E\+N\+T\+H\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(6)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a578afd2d8aef137c34a94cb45730fd29}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a578afd2d8aef137c34a94cb45730fd29}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SEVENTH\_ROW@{SEVENTH\_ROW}}
+\index{SEVENTH\_ROW@{SEVENTH\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SEVENTH\_ROW}{SEVENTH\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+E\+V\+E\+N\+T\+H\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(48)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a9372beec288eace348fdce5f2fca876a}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a9372beec288eace348fdce5f2fca876a}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SIXTH\_COLUMN@{SIXTH\_COLUMN}}
+\index{SIXTH\_COLUMN@{SIXTH\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SIXTH\_COLUMN}{SIXTH\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+I\+X\+T\+H\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(5)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac81402a0f300719939cb5a0dfbf8c588}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_ac81402a0f300719939cb5a0dfbf8c588}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!SIXTH\_ROW@{SIXTH\_ROW}}
+\index{SIXTH\_ROW@{SIXTH\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{SIXTH\_ROW}{SIXTH\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+I\+X\+T\+H\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(40)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a19d1d65e468b6348d7ee3b6c3c506a41}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a19d1d65e468b6348d7ee3b6c3c506a41}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!START\_TILE\_INDEX@{START\_TILE\_INDEX}}
+\index{START\_TILE\_INDEX@{START\_TILE\_INDEX}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{START\_TILE\_INDEX}{START\_TILE\_INDEX}}
+{\footnotesize\ttfamily  static  final int com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+S\+T\+A\+R\+T\+\_\+\+T\+I\+L\+E\+\_\+\+I\+N\+D\+EX = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_aaaeaac479235ba0d70898e0d18d22f20}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_aaaeaac479235ba0d70898e0d18d22f20}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!THIRD\_COLUMN@{THIRD\_COLUMN}}
+\index{THIRD\_COLUMN@{THIRD\_COLUMN}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{THIRD\_COLUMN}{THIRD\_COLUMN}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+T\+H\+I\+R\+D\+\_\+\+C\+O\+L\+U\+MN = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a93ed19969015a1b866999ea08fa43cb3}{init\+Column}}(2)}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a1586314b421d641c7b8365956e7d7a90}\label{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a1586314b421d641c7b8365956e7d7a90}} 
+\index{com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}!THIRD\_ROW@{THIRD\_ROW}}
+\index{THIRD\_ROW@{THIRD\_ROW}!com.chess.engine.classic.board.BoardUtils@{com.chess.engine.classic.board.BoardUtils}}
+\subsubsection{\texorpdfstring{THIRD\_ROW}{THIRD\_ROW}}
+{\footnotesize\ttfamily final List$<$Boolean$>$ com.\+chess.\+engine.\+classic.\+board.\+Board\+Utils.\+T\+H\+I\+R\+D\+\_\+\+R\+OW = \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board_utils_a00765a9cb8974e6e54dfa2cb25de687b}{init\+Row}}(16)}
+
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_board_utils_8java}{Board\+Utils.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction}{}\section{com.\+chess.\+gui.\+Table.\+Board\+Direction Enum Reference}
+\label{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction}\index{com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_tile_panel}{Tile\+Panel}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_ae0e11e0f496f7793d6c8080604d8f19c}{traverse}} (final List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_tile_panel}{Tile\+Panel}} $>$ board\+Tiles)
+\item 
+abstract \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction}{Board\+Direction}} \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a3dbbb23d4b9ef1c57829842102b41345}{opposite}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a654521c2db76ad5b33154394a54bb8f9}{traverse}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a3dbbb23d4b9ef1c57829842102b41345}\label{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a3dbbb23d4b9ef1c57829842102b41345}} 
+\index{com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}!opposite@{opposite}}
+\index{opposite@{opposite}!com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}}
+\subsubsection{\texorpdfstring{opposite()}{opposite()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction}{Board\+Direction}} com.\+chess.\+gui.\+Table.\+Board\+Direction.\+opposite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_ae0e11e0f496f7793d6c8080604d8f19c}\label{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_ae0e11e0f496f7793d6c8080604d8f19c}} 
+\index{com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}!traverse@{traverse}}
+\index{traverse@{traverse}!com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}}
+\subsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily abstract List$<$\mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_tile_panel}{Tile\+Panel}}$>$ com.\+chess.\+gui.\+Table.\+Board\+Direction.\+traverse (\begin{DoxyParamCaption}\item[{final List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_tile_panel}{Tile\+Panel}} $>$}]{board\+Tiles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a654521c2db76ad5b33154394a54bb8f9}\label{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a654521c2db76ad5b33154394a54bb8f9}} 
+\index{com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}!traverse@{traverse}}
+\index{traverse@{traverse}!com.chess.gui.Table.BoardDirection@{com.chess.gui.Table.BoardDirection}}
+\subsubsection{\texorpdfstring{traverse}{traverse}}
+{\footnotesize\ttfamily com.\+chess.\+gui.\+Table.\+Board\+Direction.\+traverse}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=(\textcolor{keyword}{final} List<TilePanel> boardTiles) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} boardTiles;}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            BoardDirection \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a3dbbb23d4b9ef1c57829842102b41345}{opposite}}() \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} FLIPPED;}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        FLIPPED \{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            List<TilePanel> \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a654521c2db76ad5b33154394a54bb8f9}{traverse}}(\textcolor{keyword}{final} List<TilePanel> boardTiles) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} Lists.reverse(boardTiles);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            BoardDirection \mbox{\hyperlink{enumcom_1_1chess_1_1gui_1_1_table_1_1_board_direction_a3dbbb23d4b9ef1c57829842102b41345}{opposite}}() \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} NORMAL;}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_table_8java}{Table.\+java}}\end{DoxyCompactItemize}

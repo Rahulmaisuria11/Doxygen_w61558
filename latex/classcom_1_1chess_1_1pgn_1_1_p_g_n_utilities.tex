@@ -1,0 +1,236 @@
+\hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities}{}\section{com.\+chess.\+pgn.\+P\+G\+N\+Utilities Class Reference}
+\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities}\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a9b29222faa6cbfc5b997f86e7c6778c6}{persist\+P\+G\+N\+File}} (final File pgn\+File)  throws I\+O\+Exception 
+\item 
+static void \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af1059e9beab511dd4974367edcb26318}{write\+Game\+To\+P\+G\+N\+File}} (final File pgn\+File, final \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_move_log}{Move\+Log}} move\+Log)  throws I\+O\+Exception 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_adc691fa81d10b050de2169346360dfbf}{process\+Move\+Text}} (final String game\+Text)  throws Parse\+P\+G\+N\+Exception 
+\item 
+static Move \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a85f7e44103f7bdb51cc6714974fd9326}{create\+Move}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final String pgn\+Text)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a958310bdf2db804967035407d21b6fe3}{P\+G\+N\+Utilities}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a438ea875a710fa38af8fc53baabb7f35}{calculate\+Event\+String}} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af7992c0af1afb2451cb5b0cb5d44fe14}{calculate\+Date\+String}} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ae9d14a2c35460d0431bb747bc2c173b5}{calculate\+Ply\+Count\+String}} (final \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_move_log}{Move\+Log}} move\+Log)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a1fb2c034691cba7ae8ca4566c708d2e8}{create\+Moves\+From\+P\+GN}} (final String pgn\+Text)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ad4c58c09639d5b0a542ec2abe7c7447d}{remove\+Empty\+Text}} (final List$<$ String $>$ moves)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f5b3f1cad30ac4052ba7d2959c994f4}{remove\+White\+Space}} (final String row)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a2fb5aa9a10980e7e1546c724ea5c90ff}{is\+Tag}} (final String game\+Text)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a4d719226070370ffee5c7380f9846318}{is\+End\+Of\+Game}} (final String game\+Text)
+\item 
+static String \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6d2391cc5e62da73e9aacdd00f16a104}{remove\+Parenthesis}} (final String game\+Text)
+\item 
+static Move \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ab0ec9ee8e61704120d3e5cf5c36deb45}{extract\+Castle\+Move}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final String castle\+Move)
+\item 
+static int \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a5024493209a3d6567e24b0faa53cec6e}{derive\+Current\+Coordinate}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}} board, final String moved\+Piece, final String destination\+Square, final String disambiguation\+File)  throws Runtime\+Exception 
+\item 
+static int \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92202124e617f80bcf023005c5310d55}{extract\+Further}} (final List$<$ Move $>$ candidate\+Moves, final String moved\+Piece, final String disambiguation\+File)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f958e8212e6a3b3079fc2ef9a319761}{P\+G\+N\+\_\+\+P\+A\+T\+T\+E\+RN}} = Pattern.\+compile(\char`\"{}\textbackslash{}\textbackslash{}\mbox{[}(\textbackslash{}\textbackslash{}w+)\textbackslash{}\textbackslash{}s+\textbackslash{}\char`\"{}(.$\ast$?)\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}\mbox{]}\$\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a67582116b089ac50a96afca81e4deca0}{K\+I\+N\+G\+\_\+\+S\+I\+D\+E\+\_\+\+C\+A\+S\+T\+LE}} = Pattern.\+compile(\char`\"{}O-\/O\#?\textbackslash{}\textbackslash{}+?\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a917072145ceea754cb8cd86d1683e19d}{Q\+U\+E\+E\+N\+\_\+\+S\+I\+D\+E\+\_\+\+C\+A\+S\+T\+LE}} = Pattern.\+compile(\char`\"{}O-\/O-\/O\#?\textbackslash{}\textbackslash{}+?\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a638924016bd8ee5265515487b596a4e7}{P\+L\+A\+I\+N\+\_\+\+P\+A\+W\+N\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}$^\wedge$(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92b5b12f318218f69e63facf7dc9017c}{P\+A\+W\+N\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}($^\wedge$\mbox{[}a-\/h\mbox{]})(x)(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a22e4496d721646d41bd1e21cb4176e3b}{P\+L\+A\+I\+N\+\_\+\+M\+A\+J\+O\+R\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}$^\wedge$(B$\vert$N$\vert$R$\vert$Q$\vert$K)(\mbox{[}a-\/h\mbox{]}$\vert$\mbox{[}1-\/8\mbox{]})?(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a862b21bcf5a71c5d8001d074ef6716ee}{M\+A\+J\+O\+R\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}$^\wedge$(B$\vert$N$\vert$R$\vert$Q$\vert$K)(\mbox{[}a-\/h\mbox{]}$\vert$\mbox{[}1-\/8\mbox{]})?(x)(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a56ec3a93f077efe83456b24779573fc7}{P\+L\+A\+I\+N\+\_\+\+P\+A\+W\+N\+\_\+\+P\+R\+O\+M\+O\+T\+I\+O\+N\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}(.$\ast$?)=(.$\ast$?)\char`\"{})
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6ed575160c72a1eb57ae9df424afa961}{A\+T\+T\+A\+C\+K\+\_\+\+P\+A\+W\+N\+\_\+\+P\+R\+O\+M\+O\+T\+I\+O\+N\+\_\+\+M\+O\+VE}} = Pattern.\+compile(\char`\"{}(.$\ast$?)x(.$\ast$?)=(.$\ast$?)\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a958310bdf2db804967035407d21b6fe3}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a958310bdf2db804967035407d21b6fe3}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PGNUtilities@{PGNUtilities}}
+\index{PGNUtilities@{PGNUtilities}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PGNUtilities()}{PGNUtilities()}}
+{\footnotesize\ttfamily com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+G\+N\+Utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af7992c0af1afb2451cb5b0cb5d44fe14}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af7992c0af1afb2451cb5b0cb5d44fe14}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!calculateDateString@{calculateDateString}}
+\index{calculateDateString@{calculateDateString}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{calculateDateString()}{calculateDateString()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+calculate\+Date\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a438ea875a710fa38af8fc53baabb7f35}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a438ea875a710fa38af8fc53baabb7f35}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!calculateEventString@{calculateEventString}}
+\index{calculateEventString@{calculateEventString}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{calculateEventString()}{calculateEventString()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+calculate\+Event\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ae9d14a2c35460d0431bb747bc2c173b5}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ae9d14a2c35460d0431bb747bc2c173b5}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!calculatePlyCountString@{calculatePlyCountString}}
+\index{calculatePlyCountString@{calculatePlyCountString}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{calculatePlyCountString()}{calculatePlyCountString()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+calculate\+Ply\+Count\+String (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_move_log}{Move\+Log}}}]{move\+Log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a85f7e44103f7bdb51cc6714974fd9326}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a85f7e44103f7bdb51cc6714974fd9326}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!createMove@{createMove}}
+\index{createMove@{createMove}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{createMove()}{createMove()}}
+{\footnotesize\ttfamily static Move com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+create\+Move (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final String}]{pgn\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a1fb2c034691cba7ae8ca4566c708d2e8}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a1fb2c034691cba7ae8ca4566c708d2e8}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!createMovesFromPGN@{createMovesFromPGN}}
+\index{createMovesFromPGN@{createMovesFromPGN}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{createMovesFromPGN()}{createMovesFromPGN()}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+create\+Moves\+From\+P\+GN (\begin{DoxyParamCaption}\item[{final String}]{pgn\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a5024493209a3d6567e24b0faa53cec6e}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a5024493209a3d6567e24b0faa53cec6e}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!deriveCurrentCoordinate@{deriveCurrentCoordinate}}
+\index{deriveCurrentCoordinate@{deriveCurrentCoordinate}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{deriveCurrentCoordinate()}{deriveCurrentCoordinate()}}
+{\footnotesize\ttfamily static int com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+derive\+Current\+Coordinate (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final String}]{moved\+Piece,  }\item[{final String}]{destination\+Square,  }\item[{final String}]{disambiguation\+File }\end{DoxyParamCaption}) throws Runtime\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ab0ec9ee8e61704120d3e5cf5c36deb45}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ab0ec9ee8e61704120d3e5cf5c36deb45}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!extractCastleMove@{extractCastleMove}}
+\index{extractCastleMove@{extractCastleMove}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{extractCastleMove()}{extractCastleMove()}}
+{\footnotesize\ttfamily static Move com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+extract\+Castle\+Move (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1classic_1_1board_1_1_board}{Board}}}]{board,  }\item[{final String}]{castle\+Move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92202124e617f80bcf023005c5310d55}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92202124e617f80bcf023005c5310d55}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!extractFurther@{extractFurther}}
+\index{extractFurther@{extractFurther}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{extractFurther()}{extractFurther()}}
+{\footnotesize\ttfamily static int com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+extract\+Further (\begin{DoxyParamCaption}\item[{final List$<$ Move $>$}]{candidate\+Moves,  }\item[{final String}]{moved\+Piece,  }\item[{final String}]{disambiguation\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a4d719226070370ffee5c7380f9846318}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a4d719226070370ffee5c7380f9846318}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!isEndOfGame@{isEndOfGame}}
+\index{isEndOfGame@{isEndOfGame}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{isEndOfGame()}{isEndOfGame()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+is\+End\+Of\+Game (\begin{DoxyParamCaption}\item[{final String}]{game\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a2fb5aa9a10980e7e1546c724ea5c90ff}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a2fb5aa9a10980e7e1546c724ea5c90ff}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!isTag@{isTag}}
+\index{isTag@{isTag}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{isTag()}{isTag()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+is\+Tag (\begin{DoxyParamCaption}\item[{final String}]{game\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a9b29222faa6cbfc5b997f86e7c6778c6}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a9b29222faa6cbfc5b997f86e7c6778c6}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!persistPGNFile@{persistPGNFile}}
+\index{persistPGNFile@{persistPGNFile}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{persistPGNFile()}{persistPGNFile()}}
+{\footnotesize\ttfamily static void com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+persist\+P\+G\+N\+File (\begin{DoxyParamCaption}\item[{final File}]{pgn\+File }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_adc691fa81d10b050de2169346360dfbf}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_adc691fa81d10b050de2169346360dfbf}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!processMoveText@{processMoveText}}
+\index{processMoveText@{processMoveText}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{processMoveText()}{processMoveText()}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+process\+Move\+Text (\begin{DoxyParamCaption}\item[{final String}]{game\+Text }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1chess_1_1pgn_1_1_parse_p_g_n_exception}{Parse\+P\+G\+N\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ad4c58c09639d5b0a542ec2abe7c7447d}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_ad4c58c09639d5b0a542ec2abe7c7447d}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!removeEmptyText@{removeEmptyText}}
+\index{removeEmptyText@{removeEmptyText}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{removeEmptyText()}{removeEmptyText()}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+remove\+Empty\+Text (\begin{DoxyParamCaption}\item[{final List$<$ String $>$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6d2391cc5e62da73e9aacdd00f16a104}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6d2391cc5e62da73e9aacdd00f16a104}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!removeParenthesis@{removeParenthesis}}
+\index{removeParenthesis@{removeParenthesis}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{removeParenthesis()}{removeParenthesis()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+remove\+Parenthesis (\begin{DoxyParamCaption}\item[{final String}]{game\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f5b3f1cad30ac4052ba7d2959c994f4}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f5b3f1cad30ac4052ba7d2959c994f4}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!removeWhiteSpace@{removeWhiteSpace}}
+\index{removeWhiteSpace@{removeWhiteSpace}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{removeWhiteSpace()}{removeWhiteSpace()}}
+{\footnotesize\ttfamily static String com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+remove\+White\+Space (\begin{DoxyParamCaption}\item[{final String}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af1059e9beab511dd4974367edcb26318}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_af1059e9beab511dd4974367edcb26318}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!writeGameToPGNFile@{writeGameToPGNFile}}
+\index{writeGameToPGNFile@{writeGameToPGNFile}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{writeGameToPGNFile()}{writeGameToPGNFile()}}
+{\footnotesize\ttfamily static void com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+write\+Game\+To\+P\+G\+N\+File (\begin{DoxyParamCaption}\item[{final File}]{pgn\+File,  }\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1gui_1_1_table_1_1_move_log}{Move\+Log}}}]{move\+Log }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6ed575160c72a1eb57ae9df424afa961}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a6ed575160c72a1eb57ae9df424afa961}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!ATTACK\_PAWN\_PROMOTION\_MOVE@{ATTACK\_PAWN\_PROMOTION\_MOVE}}
+\index{ATTACK\_PAWN\_PROMOTION\_MOVE@{ATTACK\_PAWN\_PROMOTION\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{ATTACK\_PAWN\_PROMOTION\_MOVE}{ATTACK\_PAWN\_PROMOTION\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+A\+T\+T\+A\+C\+K\+\_\+\+P\+A\+W\+N\+\_\+\+P\+R\+O\+M\+O\+T\+I\+O\+N\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}(.$\ast$?)x(.$\ast$?)=(.$\ast$?)\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a67582116b089ac50a96afca81e4deca0}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a67582116b089ac50a96afca81e4deca0}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!KING\_SIDE\_CASTLE@{KING\_SIDE\_CASTLE}}
+\index{KING\_SIDE\_CASTLE@{KING\_SIDE\_CASTLE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{KING\_SIDE\_CASTLE}{KING\_SIDE\_CASTLE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+K\+I\+N\+G\+\_\+\+S\+I\+D\+E\+\_\+\+C\+A\+S\+T\+LE = Pattern.\+compile(\char`\"{}O-\/O\#?\textbackslash{}\textbackslash{}+?\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a862b21bcf5a71c5d8001d074ef6716ee}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a862b21bcf5a71c5d8001d074ef6716ee}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!MAJOR\_ATTACK\_MOVE@{MAJOR\_ATTACK\_MOVE}}
+\index{MAJOR\_ATTACK\_MOVE@{MAJOR\_ATTACK\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{MAJOR\_ATTACK\_MOVE}{MAJOR\_ATTACK\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+M\+A\+J\+O\+R\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}$^\wedge$(B$\vert$N$\vert$R$\vert$Q$\vert$K)(\mbox{[}a-\/h\mbox{]}$\vert$\mbox{[}1-\/8\mbox{]})?(x)(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92b5b12f318218f69e63facf7dc9017c}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a92b5b12f318218f69e63facf7dc9017c}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PAWN\_ATTACK\_MOVE@{PAWN\_ATTACK\_MOVE}}
+\index{PAWN\_ATTACK\_MOVE@{PAWN\_ATTACK\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PAWN\_ATTACK\_MOVE}{PAWN\_ATTACK\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+A\+W\+N\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}($^\wedge$\mbox{[}a-\/h\mbox{]})(x)(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f958e8212e6a3b3079fc2ef9a319761}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a8f958e8212e6a3b3079fc2ef9a319761}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PGN\_PATTERN@{PGN\_PATTERN}}
+\index{PGN\_PATTERN@{PGN\_PATTERN}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PGN\_PATTERN}{PGN\_PATTERN}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+G\+N\+\_\+\+P\+A\+T\+T\+E\+RN = Pattern.\+compile(\char`\"{}\textbackslash{}\textbackslash{}\mbox{[}(\textbackslash{}\textbackslash{}w+)\textbackslash{}\textbackslash{}s+\textbackslash{}\char`\"{}(.$\ast$?)\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}\mbox{]}\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a22e4496d721646d41bd1e21cb4176e3b}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a22e4496d721646d41bd1e21cb4176e3b}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PLAIN\_MAJOR\_MOVE@{PLAIN\_MAJOR\_MOVE}}
+\index{PLAIN\_MAJOR\_MOVE@{PLAIN\_MAJOR\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PLAIN\_MAJOR\_MOVE}{PLAIN\_MAJOR\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+L\+A\+I\+N\+\_\+\+M\+A\+J\+O\+R\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}$^\wedge$(B$\vert$N$\vert$R$\vert$Q$\vert$K)(\mbox{[}a-\/h\mbox{]}$\vert$\mbox{[}1-\/8\mbox{]})?(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a638924016bd8ee5265515487b596a4e7}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a638924016bd8ee5265515487b596a4e7}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PLAIN\_PAWN\_MOVE@{PLAIN\_PAWN\_MOVE}}
+\index{PLAIN\_PAWN\_MOVE@{PLAIN\_PAWN\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PLAIN\_PAWN\_MOVE}{PLAIN\_PAWN\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+L\+A\+I\+N\+\_\+\+P\+A\+W\+N\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}$^\wedge$(\mbox{[}a-\/h\mbox{]}\mbox{[}0-\/8\mbox{]})(\textbackslash{}\textbackslash{}+)?(\#)?\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a56ec3a93f077efe83456b24779573fc7}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a56ec3a93f077efe83456b24779573fc7}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!PLAIN\_PAWN\_PROMOTION\_MOVE@{PLAIN\_PAWN\_PROMOTION\_MOVE}}
+\index{PLAIN\_PAWN\_PROMOTION\_MOVE@{PLAIN\_PAWN\_PROMOTION\_MOVE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{PLAIN\_PAWN\_PROMOTION\_MOVE}{PLAIN\_PAWN\_PROMOTION\_MOVE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+P\+L\+A\+I\+N\+\_\+\+P\+A\+W\+N\+\_\+\+P\+R\+O\+M\+O\+T\+I\+O\+N\+\_\+\+M\+O\+VE = Pattern.\+compile(\char`\"{}(.$\ast$?)=(.$\ast$?)\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a917072145ceea754cb8cd86d1683e19d}\label{classcom_1_1chess_1_1pgn_1_1_p_g_n_utilities_a917072145ceea754cb8cd86d1683e19d}} 
+\index{com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}!QUEEN\_SIDE\_CASTLE@{QUEEN\_SIDE\_CASTLE}}
+\index{QUEEN\_SIDE\_CASTLE@{QUEEN\_SIDE\_CASTLE}!com.chess.pgn.PGNUtilities@{com.chess.pgn.PGNUtilities}}
+\subsubsection{\texorpdfstring{QUEEN\_SIDE\_CASTLE}{QUEEN\_SIDE\_CASTLE}}
+{\footnotesize\ttfamily final Pattern com.\+chess.\+pgn.\+P\+G\+N\+Utilities.\+Q\+U\+E\+E\+N\+\_\+\+S\+I\+D\+E\+\_\+\+C\+A\+S\+T\+LE = Pattern.\+compile(\char`\"{}O-\/O-\/O\#?\textbackslash{}\textbackslash{}+?\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_p_g_n_utilities_8java}{P\+G\+N\+Utilities.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,227 @@
+\hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece}{}\section{com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece Enum Reference}
+\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece}\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa5391b24427b9fa03c736809e53d6fe}{calculate\+Legal\+Moves}} ()
+\item 
+abstract \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a97af3199ff4c1a0ab1cec27492ec202e}{allied\+Pieces}} ()
+\item 
+abstract \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a7d43096ebdd9c1ee9ba9dc7c65f415e9}{enemy\+Pieces}} ()
+\item 
+abstract void \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ab074918caa6654dc20c0bd29893ee651}{set\+Bits}} (int move\+Location)
+\item 
+boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aebd48b944098e984ea8f1a256b412398}{is\+Occupied}} (final int position)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a3f7038593519a8c94268b9d840e675d8}{calculate\+King\+Legals}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} king\+Bit\+Set)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad5088261ffd0bc39a292f025118f3d78}{calculate\+Queen\+Legals}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} queen\+Bit\+Set)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af4b6a186a193104cb243f5cca1f863c7}{calculate\+Rook\+Legals}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} rook\+Bit\+Set)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a771b938e53a817bc843010552e9e93e1}{calculate\+Bishop\+Legals}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} bishop\+Bit\+Set)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}} $>$ \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a325cdb75de19d1fe1c83f472031708df}{calculate\+Knight\+Legals}} (final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} knight\+Bit\+Set)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa763af8b0752cd899493161985142191}{all\+Pawns}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a9c493a89df09b3bc5b6008ffc54ba989}{all\+Knights}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa9cbd20844bb6903b75779f9c4b25a5}{all\+Bishops}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a24e9444a1916e032e120c9bcbc86d6e5}{all\+Rooks}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a166dd6537f71a05a3058daf1c5ebc200}{all\+Queens}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a68264fb3b0e7a939311225c889dc2611}{all\+Kings}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af98dad5b5843403afab2151c32152834}{all\+Pieces}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad537bdb874ee139de609526690eb1cc7}{all\+White\+Pieces}} ()
+\item 
+static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa324a943f21af0f5ab68c71cc2df8a31}{all\+Black\+Pieces}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af62d1b47da21b7319a12ab3853b6592e}{W\+H\+I\+T\+E\+\_\+\+K\+N\+I\+G\+H\+TS}}
+\item 
+\mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a13aed03f38125d8222b25923eedf17bd}{calculate\+Legal\+Moves}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad0404f1d2d21141a004cd0300e907619}{is\+Valid\+Tile}} (final int move\+Location)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa9cbd20844bb6903b75779f9c4b25a5}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa9cbd20844bb6903b75779f9c4b25a5}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allBishops@{allBishops}}
+\index{allBishops@{allBishops}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allBishops()}{allBishops()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Bishops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa324a943f21af0f5ab68c71cc2df8a31}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa324a943f21af0f5ab68c71cc2df8a31}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allBlackPieces@{allBlackPieces}}
+\index{allBlackPieces@{allBlackPieces}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allBlackPieces()}{allBlackPieces()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Black\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a97af3199ff4c1a0ab1cec27492ec202e}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a97af3199ff4c1a0ab1cec27492ec202e}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!alliedPieces@{alliedPieces}}
+\index{alliedPieces@{alliedPieces}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{alliedPieces()}{alliedPieces()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+allied\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a68264fb3b0e7a939311225c889dc2611}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a68264fb3b0e7a939311225c889dc2611}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allKings@{allKings}}
+\index{allKings@{allKings}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allKings()}{allKings()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Kings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a9c493a89df09b3bc5b6008ffc54ba989}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a9c493a89df09b3bc5b6008ffc54ba989}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allKnights@{allKnights}}
+\index{allKnights@{allKnights}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allKnights()}{allKnights()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Knights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa763af8b0752cd899493161985142191}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa763af8b0752cd899493161985142191}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allPawns@{allPawns}}
+\index{allPawns@{allPawns}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allPawns()}{allPawns()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Pawns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af98dad5b5843403afab2151c32152834}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af98dad5b5843403afab2151c32152834}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allPieces@{allPieces}}
+\index{allPieces@{allPieces}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allPieces()}{allPieces()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a166dd6537f71a05a3058daf1c5ebc200}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a166dd6537f71a05a3058daf1c5ebc200}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allQueens@{allQueens}}
+\index{allQueens@{allQueens}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allQueens()}{allQueens()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Queens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a24e9444a1916e032e120c9bcbc86d6e5}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a24e9444a1916e032e120c9bcbc86d6e5}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allRooks@{allRooks}}
+\index{allRooks@{allRooks}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allRooks()}{allRooks()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+Rooks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad537bdb874ee139de609526690eb1cc7}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad537bdb874ee139de609526690eb1cc7}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!allWhitePieces@{allWhitePieces}}
+\index{allWhitePieces@{allWhitePieces}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{allWhitePieces()}{allWhitePieces()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+all\+White\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a771b938e53a817bc843010552e9e93e1}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a771b938e53a817bc843010552e9e93e1}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateBishopLegals@{calculateBishopLegals}}
+\index{calculateBishopLegals@{calculateBishopLegals}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateBishopLegals()}{calculateBishopLegals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Bishop\+Legals (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}}]{bishop\+Bit\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a3f7038593519a8c94268b9d840e675d8}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a3f7038593519a8c94268b9d840e675d8}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateKingLegals@{calculateKingLegals}}
+\index{calculateKingLegals@{calculateKingLegals}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateKingLegals()}{calculateKingLegals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+King\+Legals (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}}]{king\+Bit\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a325cdb75de19d1fe1c83f472031708df}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a325cdb75de19d1fe1c83f472031708df}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateKnightLegals@{calculateKnightLegals}}
+\index{calculateKnightLegals@{calculateKnightLegals}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateKnightLegals()}{calculateKnightLegals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Knight\+Legals (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}}]{knight\+Bit\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa5391b24427b9fa03c736809e53d6fe}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa5391b24427b9fa03c736809e53d6fe}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateLegalMoves@{calculateLegalMoves}}
+\index{calculateLegalMoves@{calculateLegalMoves}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateLegalMoves()}{calculateLegalMoves()}}
+{\footnotesize\ttfamily abstract List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Legal\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad5088261ffd0bc39a292f025118f3d78}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad5088261ffd0bc39a292f025118f3d78}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateQueenLegals@{calculateQueenLegals}}
+\index{calculateQueenLegals@{calculateQueenLegals}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateQueenLegals()}{calculateQueenLegals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Queen\+Legals (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}}]{queen\+Bit\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af4b6a186a193104cb243f5cca1f863c7}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af4b6a186a193104cb243f5cca1f863c7}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateRookLegals@{calculateRookLegals}}
+\index{calculateRookLegals@{calculateRookLegals}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateRookLegals()}{calculateRookLegals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_move}{Move}}$>$ com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Rook\+Legals (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}}}]{rook\+Bit\+Set }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a7d43096ebdd9c1ee9ba9dc7c65f415e9}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a7d43096ebdd9c1ee9ba9dc7c65f415e9}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!enemyPieces@{enemyPieces}}
+\index{enemyPieces@{enemyPieces}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{enemyPieces()}{enemyPieces()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_chess_bit_set}{Chess\+Bit\+Set}} com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+enemy\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aebd48b944098e984ea8f1a256b412398}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aebd48b944098e984ea8f1a256b412398}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!isOccupied@{isOccupied}}
+\index{isOccupied@{isOccupied}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{isOccupied()}{isOccupied()}}
+{\footnotesize\ttfamily boolean com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+is\+Occupied (\begin{DoxyParamCaption}\item[{final int}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad0404f1d2d21141a004cd0300e907619}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad0404f1d2d21141a004cd0300e907619}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!isValidTile@{isValidTile}}
+\index{isValidTile@{isValidTile}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{isValidTile()}{isValidTile()}}
+{\footnotesize\ttfamily static boolean com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+is\+Valid\+Tile (\begin{DoxyParamCaption}\item[{final int}]{move\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ab074918caa6654dc20c0bd29893ee651}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ab074918caa6654dc20c0bd29893ee651}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!setBits@{setBits}}
+\index{setBits@{setBits}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{setBits()}{setBits()}}
+{\footnotesize\ttfamily abstract void com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+set\+Bits (\begin{DoxyParamCaption}\item[{int}]{move\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a13aed03f38125d8222b25923eedf17bd}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a13aed03f38125d8222b25923eedf17bd}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!calculateLegalMoves@{calculateLegalMoves}}
+\index{calculateLegalMoves@{calculateLegalMoves}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{calculateLegalMoves}{calculateLegalMoves}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+calculate\+Legal\+Moves}
+
+\mbox{\Hypertarget{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af62d1b47da21b7319a12ab3853b6592e}\label{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_af62d1b47da21b7319a12ab3853b6592e}} 
+\index{com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}!WHITE\_KNIGHTS@{WHITE\_KNIGHTS}}
+\index{WHITE\_KNIGHTS@{WHITE\_KNIGHTS}!com.chess.engine.bitboards.BitBoard.Piece@{com.chess.engine.bitboards.BitBoard.Piece}}
+\subsubsection{\texorpdfstring{WHITE\_KNIGHTS}{WHITE\_KNIGHTS}}
+{\footnotesize\ttfamily com.\+chess.\+engine.\+bitboards.\+Bit\+Board.\+Piece.\+W\+H\+I\+T\+E\+\_\+\+K\+N\+I\+G\+H\+TS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=() \{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            \textcolor{keyword}{public} List<Move> \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aaa5391b24427b9fa03c736809e53d6fe}{calculateLegalMoves}}() \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a325cdb75de19d1fe1c83f472031708df}{calculateKnightLegals}}(\mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_ae6f5958b9c8907ddfc8310bcca87cfc6}{whiteKnights}});}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            \textcolor{keyword}{public} ChessBitSet \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a97af3199ff4c1a0ab1cec27492ec202e}{alliedPieces}}() \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ad537bdb874ee139de609526690eb1cc7}{allWhitePieces}}();}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            \textcolor{keyword}{public} ChessBitSet \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_a7d43096ebdd9c1ee9ba9dc7c65f415e9}{enemyPieces}}() \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_aa324a943f21af0f5ab68c71cc2df8a31}{allBlackPieces}}();}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{enumcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_1_1_piece_ab074918caa6654dc20c0bd29893ee651}{setBits}}(\textcolor{keyword}{final} \textcolor{keywordtype}{int} moveLocation) \{}
+\DoxyCodeLine{                \mbox{\hyperlink{classcom_1_1chess_1_1engine_1_1bitboards_1_1_bit_board_acb30850f7d529c2d709e8dd82c9199c6}{whiteLegalLocations}}.set(moveLocation);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+:/\+Black\+Widow-\/\+Chess-\/master/\+Doxygen/src/\mbox{\hyperlink{_bit_board_8java}{Bit\+Board.\+java}}\end{DoxyCompactItemize}
